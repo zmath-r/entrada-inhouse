@@ -127,7 +127,7 @@ npx vite --host
 
 ## 🔌 Hardware & Firmware ESP32
 
-O firmware está localizado em [`AcessoMercado/AcessoMercado.ino`](file:///c:/Users/Jose%20Matheus/OneDrive/Documentos/Projeto%20da%20Visita%20T%C3%A9cnica/AcessoMercado/AcessoMercado.ino) e é totalmente compatível com a simulação virtual no **Wokwi** ([`wokwi/diagram.json`](file:///c:/Users/Jose%20Matheus/OneDrive/Documentos/Projeto%20da%20Visita%20T%C3%A9cnica/wokwi/diagram.json)).
+O firmware de produção para microcontroladores ESP32 está localizado em [`hardware/esp32_firmware/esp32_firmware.ino`](file:///c:/Users/Jose%20Matheus/OneDrive/Documentos/Projeto%20da%20Visita%20T%C3%A9cnica/hardware/esp32_firmware/esp32_firmware.ino) e a bancada virtual de testes está configurada em [`hardware/wokwi_simulacao/diagram.json`](file:///c:/Users/Jose%20Matheus/OneDrive/Documentos/Projeto%20da%20Visita%20T%C3%A9cnica/hardware/wokwi_simulacao/diagram.json).
 
 ### Mapeamento de Pinos (Pinout)
 
@@ -147,38 +147,53 @@ O firmware está localizado em [`AcessoMercado/AcessoMercado.ino`](file:///c:/Us
 ```text
 Projeto da Visita Técnica/
 │
-├── 🚀 INICIAR_TUDO.bat            # Script de inicialização em 1 clique (Windows)
-├── 🛑 PARAR_TUDO.bat              # Script de encerramento dos servidores
-├── 📄 README.md                   # Documentação oficial do projeto
+├── 🚀 INICIAR_TUDO.bat            # Atalho raiz: inicia Backend, Frontend e Browser
+├── 🛑 PARAR_TUDO.bat              # Atalho raiz: encerra instâncias ativas do sistema
+├── 🔄 SUBIR_PARA_GITHUB.bat       # Utilitário de sincronização contínua com o GitHub
+├── 📄 README.md                   # Documentação técnica oficial da arquitetura
 ├── 📄 .gitignore                  # Regras de exclusão de artefatos e dependências
 │
-├── 📂 backend/                    # Servidor Express, JWT, TOTP, SQLite e Testes
+├── 📂 backend/                    # Servidor Node.js + Express + SQLite
 │   ├── server.js                  # Rotas REST e controladores de telemetria
-│   ├── database.js                # Schema do banco de dados SQLite
-│   ├── test_exit_flow.js          # Suíte de testes do ciclo de saída (11 testes)
-│   └── test_admin_residents.js    # Suíte de testes de gestão de moradores
+│   ├── database.js                # Schema e migrações do banco SQLite
+│   └── 📂 tests/                  # Suíte de testes automatizados de integração
+│       ├── test_exit_flow.js      # Validação do ciclo de saída e Anti-Passback
+│       ├── test_admin_residents.js # Validação de gestão de moradores e convites
+│       └── test_sprint1.js        # Testes de autenticação JWT e validação TOTP
 │
-├── 📂 dashboard/                  # Aplicação Web PWA (React 19 + Tailwind CSS)
+├── 📂 dashboard/                  # PWA React 19 + Vite + Tailwind CSS
 │   ├── src/
-│   │   ├── pages/AdminDashboard.jsx   # Painel do Síndico (Obsidian Glass)
+│   │   ├── pages/AdminDashboard.jsx   # Painel do Síndico (Estilo Apple / Obsidian Glass)
 │   │   ├── pages/ResidentView.jsx     # PWA Mobile do Morador (TOTP + Saída)
 │   │   ├── pages/GuestPass.jsx        # Tela pública do Passe Visitante
-│   │   └── pages/Login.jsx            # Autenticação com atalhos rápidos
-│   └── vite.config.js             # Configuração do Vite e plugins
+│   │   └── pages/Login.jsx            # Autenticação com perfis de demonstração
+│   └── vite.config.js             # Configurações do Vite e plugins
 │
-├── 📂 AcessoMercado/              # Firmware C++ para ESP32
-│   └── AcessoMercado.ino          # Máquina de Estados Finitos (FSM)
+├── 📂 hardware/                   # Soluções de Hardware e Internet das Coisas (IoT)
+│   ├── 📂 esp32_firmware/         # Firmware C++ para o microcontrolador ESP32 físico
+│   │   └── esp32_firmware.ino     # FSM, controle de relé, botoeira e telemetria HTTP
+│   └── 📂 wokwi_simulacao/        # Bancada de simulação de circuito virtual
+│       ├── diagram.json           # Diagrama esquemático de ligação dos componentes
+│       ├── wokwi.ino              # Código de simulação no Wokwi
+│       └── wokwi.toml             # Configuração de build do simulador
 │
-├── 📂 wokwi/                      # Diagrama e simulação virtual de hardware
-│   └── diagram.json               # Esquema esquemático com botões e LCD
+├── 📂 docs/                       # Base de Conhecimento e Governança
+│   ├── 📂 manuais/                # Manuais de inicialização e rotinas operacionais
+│   │   └── COMO_INICIAR_O_SISTEMA.md  # Guia passo a passo com fotos e FAQs
+│   ├── 📂 historico_e_auditoria/  # Auditoria técnica e controle de versões
+│   │   ├── HISTORICO_MUDANCAS.md  # Changelog cronológico detalhado (v1.0.0 a v2.0.0)
+│   │   └── AUDITORIA_E_LOGS.md    # Especificações de logs forenses
+│   └── 📂 design_stitch/          # Especificações visuais e telas Obsidian Glass
 │
-├── 📂 como_iniciar_sistema/       # Guias passo a passo e scripts auxiliares
-│   ├── COMO_INICIAR_O_SISTEMA.md  # Manual detalhado de operação autônoma
-│   ├── iniciar_sistema.bat        # Inicializador avançado
-│   └── parar_sistema.bat          # Finalizador de processos
+├── 📂 scripts/                    # Scripts de automação do ambiente
+│   ├── iniciar_sistema.bat        # Inicializador avançado dos serviços
+│   ├── iniciar_sistema.ps1        # Script moderno para PowerShell
+│   └── parar_sistema.bat          # Finalizador limpo de processos Node/Vite
 │
-└── 📂 logs_e_mudancas_sistema/    # Central de auditoria e changelog formal
-    └── HISTORICO_MUDANCAS.md      # Registro cronológico de todas as releases (v1.0.0 a v1.8.1)
+└── 📂 legacy_prototype/           # Protótipo estático original (Sprint 1)
+    ├── index.html                 # Interface HTML legada
+    ├── script.js                  # Lógica JavaScript legada
+    └── style.css                  # Estilização CSS legada
 ```
 
 ---

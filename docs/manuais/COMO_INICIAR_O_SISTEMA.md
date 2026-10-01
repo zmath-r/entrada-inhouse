@@ -38,7 +38,7 @@ Criamos scripts executáveis automáticos para que você possa iniciar e parar t
 1. Abra a pasta do projeto no Windows Explorer:
    `c:\Users\Jose Matheus\OneDrive\Documentos\Projeto da Visita Técnica`
 2. Dê um **duplo clique** no arquivo:
-   👉 **`INICIAR_TUDO.bat`** (ou dentro da pasta `como_iniciar_sistema\iniciar_sistema.bat`)
+   👉 **`INICIAR_TUDO.bat`** (ou dentro da pasta `scripts\iniciar_sistema.bat`)
 3. O script irá:
    - Abrir automaticamente a janela preta do **Backend** (porta 3000);
    - Abrir automaticamente a janela preta do **Frontend** (porta 5173 com acesso à rede Wi-Fi);
@@ -147,7 +147,7 @@ Quando terminar de usar ou apresentar:
 
 ### Método Automático:
 - Dê um duplo clique no arquivo:
-  👉 **`PARAR_TUDO.bat`** (ou `como_iniciar_sistema\parar_sistema.bat`).
+  👉 **`PARAR_TUDO.bat`** (ou `scripts\parar_sistema.bat`).
 - Ele encerra os processos Node e Vite rodando nas portas 3000 e 5173 de forma limpa.
 
 ### Método Manual:
@@ -172,7 +172,7 @@ Se o terminal acusar que a porta já está ocupada por outra instância anterior
 ### 3. "Como reiniciar os dados do banco de teste para o estado original?"
 O banco de dados fica no arquivo `backend/database.sqlite`. Para executar uma bateria de testes automáticos e validar a integridade de todas as tabelas:
 ```powershell
-node backend/test_exit_flow.js
-node backend/test_admin_residents.js
+node backend/tests/test_exit_flow.js
+node backend/tests/test_admin_residents.js
 ```
 Ambos os scripts garantem que o banco está saudável e com 100% de conformidade.

@@ -8,6 +8,31 @@
 ## Sumário Executivo
 Este documento registra cronologicamente todas as versões, refatorações, correções de bugs e evoluções de engenharia de software e hardware do sistema **Entrada InHouse**. Cada release segue práticas de auditoria, conformidade com a LGPD e robustez de missão crítica para operação autônoma 24/7.
 
+## [v2.0.0] - 2026-10-01 - Reorganização Arquitetural por Domínio Funcional
+
+### 🎯 Objetivos
+- Estruturar a árvore de diretórios em pilares funcionais claros e coesos de padrão industrial.
+- Isolar firmwares IoT, suítes de testes, documentações executivas, protótipos legados e scripts operacionais.
+- Atualizar caminhos de execução automática e manter atalhos raiz 100% operacionais.
+
+### 🔄 Modificações Realizadas
+1. **Pilar de Hardware & IoT (`hardware/`):**
+   - Criação de `hardware/esp32_firmware/` contendo `esp32_firmware.ino` (firmware C++ de produção compatível com Arduino IDE).
+   - Criação de `hardware/wokwi_simulacao/` contendo `diagram.json`, `wokwi.toml` e `wokwi.ino` para simulação online.
+2. **Pilar de Testes do Backend (`backend/tests/`):**
+   - Agrupamento dos testes automatizados (`test_exit_flow.js`, `test_admin_residents.js`, `test_sprint1.js`) no diretório dedicado `backend/tests/`.
+3. **Pilar de Documentação (`docs/`):**
+   - `docs/manuais/`: Manuais passo a passo para inicialização e operação.
+   - `docs/historico_e_auditoria/`: Logs de auditoria, changelog formal e históricos de sprints.
+   - `docs/design_stitch/`: Telas e especificações da interface visual Obsidian Glass (Estilo Apple).
+4. **Pilar de Automação & Scripts (`scripts/`):**
+   - Centralização dos scripts `.bat` e `.ps1` de inicialização e parada do sistema.
+   - Manutenção de atalhos rápidos `INICIAR_TUDO.bat` e `PARAR_TUDO.bat` na raiz do projeto.
+5. **Protótipo Legado (`legacy_prototype/`):**
+   - Isolamento do protótipo estático original (HTML/CSS/JS da Sprint 1) preservando seu valor histórico.
+6. **Limpeza de Artefatos Temporários:**
+   - Remoção de diretórios temporários de compilação do ESP32 (`.arduino_build/`, `arduino-build/`, `tmp_arduino_verify/`).
+
 ---
 
 ## [v1.9.0] - 2026-10-01 - Publicação Oficial no GitHub & Versionamento Remoto

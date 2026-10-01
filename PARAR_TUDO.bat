@@ -1,2 +1,2 @@
 @echo off
-call "%~dp0como_iniciar_sistema\parar_sistema.bat"
+call "%~dp0scripts\parar_sistema.bat"
