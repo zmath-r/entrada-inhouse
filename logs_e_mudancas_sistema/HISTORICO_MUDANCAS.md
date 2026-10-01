@@ -10,6 +10,27 @@ Este documento registra cronologicamente todas as versões, refatorações, corr
 
 ---
 
+## [v1.9.0] - 2026-10-01 - Publicação Oficial no GitHub & Versionamento Remoto
+
+### 🎯 Objetivos
+- Publicar a totalidade do código-fonte, esquemáticos e documentações do projeto no GitHub sob a conta oficial do proprietário (`zmath-r`).
+- Estabelecer diretrizes seguras de `.gitignore` para proteção de dados locais e dependências pesadas.
+- Disponibilizar `README.md` técnico de padrão industrial e atalho para sincronizações futuras.
+
+### 🔄 Modificações Realizadas
+1. **Controle de Versão & Repositório Remoto:**
+   - Inicialização do repositório Git e vinculação com a origem remota: [`https://github.com/zmath-r/entrada-inhouse.git`](https://github.com/zmath-r/entrada-inhouse.git).
+   - Configuração de branch principal `main` e autoria vinculada ao usuário `zmath-r`.
+   - Criação de script utilitário `SUBIR_PARA_GITHUB.bat` na raiz para sincronização contínua com 1 duplo clique no Windows.
+2. **Proteção de Código & `.gitignore`:**
+   - Exclusão seletiva de `node_modules/`, `dist/`, builds temporários do Arduino/ESP32 e banco de dados SQLite local em tempo de execução (`database.sqlite`).
+3. **Documentação Oficial:**
+   - Criação do [`README.md`](file:///c:/Users/Jose%20Matheus/OneDrive/Documentos/Projeto%20da%20Visita%20T%C3%A9cnica/README.md) completo na raiz com badges, diagrama de arquitetura Mermaid, pinout do ESP32, roteiro de testes e especificações técnicas.
+4. **Deploy do Código:**
+   - 66 arquivos versionados e enviados com sucesso para o branch `main`.
+
+---
+
 ## [v1.8.1] - 2026-09-18 - Central de Inicialização Autônoma e Scripts em 1 Clique
 
 ### 🎯 Objetivos
