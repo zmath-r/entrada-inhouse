@@ -1,25 +1,50 @@
 @echo off
-chcp 65001 >nul
-title Entrada InHouse - Envio para o GitHub
+title Entrada InHouse - Sincronizacao com GitHub
 color 0b
+
 echo ========================================================
-echo    🚀 ENVIANDO CODIGO PARA O GITHUB (zmath-r)
+echo    SINCRONIZANDO COM O GITHUB (zmath-r/entrada-inhouse)
 echo ========================================================
 echo.
-echo Conectando ao repositorio https://github.com/zmath-r/entrada-inhouse.git ...
-echo.
-git push -u origin main
-echo.
-if %ERRORLEVEL% EQU 0 (
-    echo ========================================================
-    echo    🎉 SUCESSO! CODIGO ENVIADO PARA O SEU GITHUB!
-    echo    Acesse: https://github.com/zmath-r/entrada-inhouse
-    echo ========================================================
+
+cd /d "%~dp0"
+
+echo [1/3] Verificando alteracoes locais...
+git add -A
+
+git diff --cached --quiet
+if %ERRORLEVEL% NEQ 0 (
+    echo [2/3] Criando commit com alteracoes recentes...
+    git commit -m "update: sincronizacao automatica do projeto"
 ) else (
-    echo ========================================================
-    echo    ⚠️ Se a janela de login do GitHub abrir no navegador,
-    echo    clique em 'Authorize' para confirmar.
-    echo ========================================================
+    echo [2/3] Nenhuma alteracao pendente para commit.
 )
+
 echo.
+echo [3/3] Enviando para o repositorio remoto...
+git push origin main
+
+if %ERRORLEVEL% EQU 0 goto :SUCESSO
+goto :ERRO
+
+:SUCESSO
+echo.
+echo ========================================================
+echo    SUCESSO! O CODIGO ESTA ATUALIZADO NO GITHUB!
+echo    Acesse: https://github.com/zmath-r/entrada-inhouse
+echo ========================================================
+echo.
+goto :FIM
+
+:ERRO
+echo.
+echo ========================================================
+echo    FALHA OU REQUISICAO DE AUTORIZACAO
+echo    Se a janela do navegador abrir, confirme o login
+echo    do GitHub para autorizar o envio.
+echo ========================================================
+echo.
+goto :FIM
+
+:FIM
 pause
