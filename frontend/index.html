@@ -1,0 +1,37 @@
+<!DOCTYPE strict html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCondo - Gerador de Acesso</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>SmartCondo</h1>
+        <p>Gere seu token de acesso para o minimercado.</p>
+        
+        <div class="form-group">
+            <label for="apartment">Número do Apartamento (ex: 101, 202B):</label>
+            <input type="text" id="apartment" placeholder="Digite seu apartamento">
+        </div>
+
+        <button id="generateBtn" onclick="generateToken()">Gerar QR Code de Acesso</button>
+
+        <div id="loading" class="hidden">Gerando token...</div>
+
+        <div id="result" class="hidden">
+            <h2>Seu Token de Acesso</h2>
+            <div id="qrcode"></div>
+            <p class="warning">Este QR Code é de uso único. Aproximá-lo do leitor garantirá sua entrada.</p>
+            <div class="token-text">
+                <small>Token: <span id="tokenString"></span></small>
+            </div>
+            <button class="secondary-btn" onclick="resetForm()">Gerar Outro</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

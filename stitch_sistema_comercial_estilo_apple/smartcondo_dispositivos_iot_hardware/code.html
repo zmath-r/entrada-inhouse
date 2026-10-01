@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#ffddbb","inverse-primary":"#005db8","on-error-container":"#ffdad6","on-primary-fixed":"#001b3e","on-secondary-fixed-variant":"#00531a","surface-container-low":"#181c24","on-surface":"#dfe2ee","on-background":"#dfe2ee","surface-dim":"#0f131c","primary-fixed":"#d6e3ff","error-container":"#93000a","on-secondary-container":"#004615","outline-variant":"#414754","on-secondary-fixed":"#002106","surface-tint":"#aac7ff","on-tertiary-container":"#3f2300","surface-bright":"#353942","on-error":"#690005","surface":"#0f131c","primary-fixed-dim":"#aac7ff","tertiary-fixed-dim":"#ffb868","on-tertiary-fixed-variant":"#673d00","secondary":"#47e266","primary-container":"#3e90ff","on-surface-variant":"#c0c6d6","on-primary-fixed-variant":"#00468d","surface-container":"#1c2028","inverse-on-surface":"#2c3039","on-primary":"#003064","on-secondary":"#003910","secondary-fixed":"#6cff82","on-tertiary":"#482900","outline":"#8b91a0","on-tertiary-fixed":"#2b1700","tertiary-container":"#ce7f00","surface-container-lowest":"#0a0e16","surface-variant":"#31353e","inverse-surface":"#dfe2ee","surface-container-high":"#262a33","tertiary":"#ffb868","surface-container-highest":"#31353e","error":"#ffb4ab","secondary-fixed-dim":"#47e266","on-primary-container":"#002957","background":"#0f131c","primary":"#aac7ff","secondary-container":"#09bf49"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2rem","space-lg":"1.5rem","margin-mobile":"1rem","space-md":"1rem","margin":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1.25rem","gutter-mobile":"0.75rem"},"fontFamily":{"label-md":["Inter"],"headline-md":["Inter"],"code-sm":["JetBrains Mono"],"title-md":["Inter"],"display-lg-mobile":["Inter"],"label-sm":["Inter"],"display-lg":["Inter"],"body-md":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"title-lg":["Inter"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.0em","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}],"title-md":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"-0.003em","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"title-lg":["17px",{"lineHeight":"22px","letterSpacing":"-0.012em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased select-none"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/75 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="pt-4 px-5 pb-3 flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-[#FF5F56] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div><div class="w-3 h-3 rounded-full bg-[#FFBD2E] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div><div class="w-3 h-3 rounded-full bg-[#27C93F] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div></div><div class="px-5 pt-3 pb-5"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">domain</span></div><div><h1 class="font-title-md text-title-md text-on-surface tracking-tight leading-none">SmartCondo</h1><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Painel Administrativo</p></div></div></div><div class="px-5 pb-2"><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Administração</span></div><nav class="flex flex-col gap-1 px-3" data-active-classes="bg-surface-container-high text-on-surface font-title-md shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"><a class="flex items-center px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="monitoramento" href="#">Monitoramento</a><a class="flex items-center px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="moradores-e-unidades" href="#">Moradores &amp; Unidades</a><a class="flex items-center px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="convites-e-passes" href="#">Convites &amp; Passes</a><a aria-current="page" class="flex items-center px-3 py-2 rounded-lg transition-all bg-surface-container-high text-on-surface font-title-md shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]" data-path="dispositivos-iot" href="#">Dispositivos IoT</a><a class="flex items-center px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="configuracoes" href="#">Configurações</a></nav></div><div class="p-3"><div class="p-2.5 rounded-xl bg-surface-container/60 backdrop-blur-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight">Síndico Geral</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Bloco A</span></div></div><a class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error transition-colors" data-path="logout" href="#" title="Encerrar Sessão"><span class="material-symbols-outlined text-[18px]">power_settings_new</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/75 backdrop-blur-2xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-3"><div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-secondary/10"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-code-sm text-code-sm text-secondary uppercase tracking-wide">Hardware ONLINE</span></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-high/60 backdrop-blur-md text-on-surface-variant w-64"><span class="material-symbols-outlined text-[16px] text-outline">search</span><span class="font-body-md text-body-md text-outline flex-1">Buscar unidade, tag ou log...</span><kbd class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]">⌘K</kbd></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative w-full pt-14 px-space-lg pb-space-xl bg-background min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP HEADER & TELEMETRY CONTROLS -->
+<header class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container/60 backdrop-blur-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_8px_24px_rgba(0,0,0,0.35)]">
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2.5">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Dispositivos IoT &amp; Hardware</h1>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary/10">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-code-sm text-code-sm text-secondary uppercase tracking-wider font-semibold">Rede Mesh &amp; Gateway Operacional</span>
+</div>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded-md bg-surface-container-high/80 text-on-surface-variant shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+          FIRMWARE v2.4.1-rc3
+        </span>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded-md bg-surface-container-high/80 text-primary shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">speed</span>
+          FREQ: 500ms
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Gerenciamento centralizado de controladoras ESP32-S3 Pro, catracas de acesso ao minimercado autônomo, leitores biométricos e fechaduras eletromagnéticas com persistência off-grid.
+      </p>
+</div>
+<!-- Actions Header -->
+<div class="flex items-center gap-2.5 shrink-0">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-title-md text-title-md transition-all duration-150 active:scale-[0.98] shadow-[inset_0_1px_0_rgba(255,255,255,0.07)]" id="btn-ping-all" type="button">
+<span class="material-symbols-outlined text-[17px] text-primary" id="icon-ping">sync</span>
+<span>Ping Geral</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-title-md text-title-md transition-all duration-150 active:scale-[0.98] shadow-[inset_0_1px_0_rgba(255,255,255,0.07)]" type="button">
+<span class="material-symbols-outlined text-[17px] text-tertiary">bolt</span>
+<span>OTA Batch</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-title-md text-title-md font-semibold transition-all duration-150 shadow-[inset_0_1px_0_rgba(255,255,255,0.3),0_4px_12px_rgba(62,144,255,0.35)] active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Provisionar Dispositivo</span>
+</button>
+</div>
+</header>
+<!-- 5 HARDWARE KPIS METRICS GRID -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- KPI 1 -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-container/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_16px_rgba(0,0,0,0.25)] flex flex-col justify-between group hover:bg-surface-container-high/50 transition-all duration-200">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Dispositivos Ativos</span>
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+</div>
+<div class="my-2.5 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-on-surface">6 / 6</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">100% Online</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<span>Uptime médio global</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">99.98%</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-container/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_16px_rgba(0,0,0,0.25)] flex flex-col justify-between group hover:bg-surface-container-high/50 transition-all duration-200">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Latência Mesh</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">wifi_channel</span>
+</div>
+<div class="my-2.5 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-on-surface">14</span>
+<span class="font-title-md text-title-md text-on-surface-variant">ms</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary/15 text-secondary font-semibold ml-auto">Excelente</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<span>Jitter ponto a ponto</span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">&lt; 1.8ms</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-container/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_16px_rgba(0,0,0,0.25)] flex flex-col justify-between group hover:bg-surface-container-high/50 transition-all duration-200">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Buffer Offline &amp; Sync</span>
+<span class="material-symbols-outlined text-[18px] text-primary">cloud_sync</span>
+</div>
+<div class="my-2.5 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-on-surface">0</span>
+<span class="font-title-md text-title-md text-on-surface-variant">pendentes</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<span>SQLite Local</span>
+<span class="font-code-sm text-code-sm text-primary font-semibold">100% íntegro</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-container/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_16px_rgba(0,0,0,0.25)] flex flex-col justify-between group hover:bg-surface-container-high/50 transition-all duration-200">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Criptografia AES-256</span>
+<span class="material-symbols-outlined text-[18px] text-primary">enhanced_encryption</span>
+</div>
+<div class="my-2.5 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">Sincronizadas</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<span>Rotação de Chaves</span>
+<span class="font-code-sm text-code-sm text-on-surface">a cada 12h</span>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-container/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_16px_rgba(0,0,0,0.25)] flex flex-col justify-between group hover:bg-surface-container-high/50 transition-all duration-200">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Tamper &amp; Hardware</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">security</span>
+</div>
+<div class="my-2.5 flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-secondary">0</span>
+<span class="font-title-md text-title-md text-on-surface-variant">violações</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<span>Gabinete Físico</span>
+<span class="font-code-sm text-code-sm text-secondary">Selado / OK</span>
+</div>
+</div>
+</section>
+<!-- SEARCH, SEGMENTED CONTROL & ZONE FILTER -->
+<section class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md p-space-sm rounded-xl bg-surface-container-low/70 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
+<!-- Search Bar -->
+<div class="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-surface-container-high/80 text-on-surface-variant flex-1 max-w-md shadow-[inset_0_1px_2px_rgba(0,0,0,0.4)]">
+<span class="material-symbols-outlined text-[18px] text-outline">search</span>
+<input class="bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-outline w-full focus:ring-0" id="hardware-search" placeholder="Buscar por MAC, IP, zona ou serial..." type="text"/>
+<kbd class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container text-outline shadow-[0_1px_2px_rgba(0,0,0,0.4)]">⌘F</kbd>
+</div>
+<div class="flex flex-wrap items-center gap-2.5">
+<!-- Apple-like Segmented Filter Controls -->
+<div class="p-1 rounded-lg bg-surface-container-lowest flex items-center gap-1 shadow-[inset_0_1px_2px_rgba(0,0,0,0.6)]">
+<button class="filter-tab px-3 py-1 rounded-md font-label-md text-label-md bg-surface-container-high text-on-surface font-semibold shadow-[0_2px_6px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)] transition-all" data-category="all" type="button">
+          Todos (6)
+        </button>
+<button class="filter-tab px-3 py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container/50 transition-all" data-category="turnstile" type="button">
+          Catracas &amp; Torniquetes (3)
+        </button>
+<button class="filter-tab px-3 py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container/50 transition-all" data-category="biometric" type="button">
+          Biometria &amp; Face (2)
+        </button>
+<button class="filter-tab px-3 py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container/50 transition-all" data-category="gateway" type="button">
+          Gateways (1)
+        </button>
+</div>
+<!-- Zone Dropdown Filter -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-high/80 text-on-surface font-title-md text-title-md py-2 pl-3.5 pr-9 rounded-lg border-none outline-none cursor-pointer shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] hover:bg-surface-container-highest transition-colors">
+<option value="all">Todas as Zonas &amp; Blocos</option>
+<option selected="" value="minimercado">Minimercado Autônomo</option>
+<option value="bloco-a">Bloco A - Residencial</option>
+<option value="bloco-b">Bloco B - Residencial</option>
+<option value="portaria">Guarita / Portaria</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-outline absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</section>
+<!-- 2-COLUMN WORKSPACE LAYOUT -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: HARDWARE CARDS / LIST STREAM (7 cols) -->
+<div class="xl:col-span-7 flex flex-col gap-3">
+<!-- ITEM 1: Active In-Focus Device -->
+<div class="device-card active-device cursor-pointer relative p-space-md rounded-xl bg-surface-container/90 backdrop-blur-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_12px_32px_rgba(0,0,0,0.45)] transition-all duration-200" data-device-id="ESP-CAT-01">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] shrink-0">
+<span class="material-symbols-outlined text-[22px]">sensor_door</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold tracking-tight">Catraca Principal - Entrada Minimercado</h3>
+<span class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-primary/10 text-primary font-bold">EM FOCO</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Zona: Minimercado • Bloco A (Subsolo 1)</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm text-secondary font-bold">ONLINE</span>
+</div>
+</div>
+<!-- Hardware Specs Pill Grid -->
+<div class="mt-3.5 grid grid-cols-2 sm:grid-cols-3 gap-2 p-2.5 rounded-lg bg-surface-container-lowest/80 text-on-surface-variant font-code-sm text-code-sm">
+<div>
+<span class="text-outline uppercase text-[10px] block">SoC Controller</span>
+<span class="text-on-surface font-medium">ESP32-S3 Pro (240MHz)</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">MAC Address</span>
+<span class="text-on-surface font-medium">48:E7:29:B3:91:0A</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Endereço IP</span>
+<span class="text-on-surface font-medium">192.168.10.42</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Sensores Integrados</span>
+<span class="text-on-surface truncate block">QR 2D + RFID 13.56MHz + Solenoide</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Telemetria RF</span>
+<span class="text-secondary font-medium">-48 dBm • 12ms</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Temperatura &amp; Loop</span>
+<span class="text-on-surface font-medium">41°C • 2s atrás</span>
+</div>
+</div>
+<!-- Mini Progress Bar / Visual Metric -->
+<div class="mt-3 flex items-center justify-between text-on-surface-variant font-body-md text-body-md">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase">Carga CPU:</span>
+<div class="w-24 h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 18%"></div>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface">18%</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">FW: v2.4.1-rc3 (Atualizado)</span>
+</div>
+</div>
+<!-- ITEM 2: Torniquete Saída -->
+<div class="device-card cursor-pointer relative p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container-high/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_4px_16px_rgba(0,0,0,0.2)] transition-all duration-200" data-device-id="ESP-TOR-02">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface shrink-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+<span class="material-symbols-outlined text-[22px]">view_stream</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold tracking-tight">Torniquete Direcional - Saída Minimercado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Anti-Passback Integrado • Bloco A Minimercado</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm text-secondary font-bold">ONLINE</span>
+</div>
+</div>
+<div class="mt-3.5 grid grid-cols-2 sm:grid-cols-3 gap-2 p-2.5 rounded-lg bg-surface-container-lowest/60 text-on-surface-variant font-code-sm text-code-sm">
+<div>
+<span class="text-outline uppercase text-[10px] block">SoC Controller</span>
+<span class="text-on-surface font-medium">ESP32-S3 Pro</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">MAC / IP</span>
+<span class="text-on-surface font-medium">48:E7:29:B3:91:1F • .43</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Sensores</span>
+<span class="text-on-surface truncate block">Barreira IR Óptica + Eletromecânica</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Latência</span>
+<span class="text-secondary font-medium">16ms (Jitter 1ms)</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Sinal Wi-Fi</span>
+<span class="text-on-surface font-medium">-52 dBm (Estável)</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">SoC Temp</span>
+<span class="text-on-surface font-medium">39.0°C</span>
+</div>
+</div>
+</div>
+<!-- ITEM 3: FaceID Camera IA -->
+<div class="device-card cursor-pointer relative p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container-high/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_4px_16px_rgba(0,0,0,0.2)] transition-all duration-200" data-device-id="ESP-FACE-03">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shrink-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+<span class="material-symbols-outlined text-[22px]">face_unlock</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold tracking-tight">Terminal FaceID &amp; Câmera IA - Entrada Bloco A</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Reconhecimento Neural Local (On-Device)</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm text-secondary font-bold">ONLINE</span>
+</div>
+</div>
+<div class="mt-3.5 grid grid-cols-2 sm:grid-cols-3 gap-2 p-2.5 rounded-lg bg-surface-container-lowest/60 text-on-surface-variant font-code-sm text-code-sm">
+<div>
+<span class="text-outline uppercase text-[10px] block">Processador Neural</span>
+<span class="text-on-surface font-medium">ESP32-CAM AI + K210 Vision</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">MAC / IP</span>
+<span class="text-on-surface font-medium">70:03:9F:14:88:22 • .15</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Acurácia IA</span>
+<span class="text-secondary font-semibold">99.4% (512-dim)</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Latência Reconhecimento</span>
+<span class="text-on-surface font-medium">180ms</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Rede</span>
+<span class="text-on-surface font-medium">-45 dBm • 18ms</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Modo Noturno</span>
+<span class="text-primary font-medium">IR Ativo (Auto)</span>
+</div>
+</div>
+</div>
+<!-- ITEM 4: Catraca Secundária Bloco B -->
+<div class="device-card cursor-pointer relative p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container-high/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_4px_16px_rgba(0,0,0,0.2)] transition-all duration-200" data-device-id="ESP-CAT-04">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface shrink-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+<span class="material-symbols-outlined text-[22px]">sensor_door</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold tracking-tight">Catraca Secundária - Minimercado (Acesso Bloco B)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Conector Bidirecional • Corredor Técnico Norte</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm text-secondary font-bold">ONLINE</span>
+</div>
+</div>
+<div class="mt-3.5 grid grid-cols-2 sm:grid-cols-3 gap-2 p-2.5 rounded-lg bg-surface-container-lowest/60 text-on-surface-variant font-code-sm text-code-sm">
+<div>
+<span class="text-outline uppercase text-[10px] block">Hardware</span>
+<span class="text-on-surface font-medium">ESP32-S3 Pro Dual</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">MAC / IP</span>
+<span class="text-on-surface font-medium">48:E7:29:B3:91:3C • .44</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Sinal Mesh</span>
+<span class="text-on-surface font-medium">-60 dBm • 21ms</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Temperatura</span>
+<span class="text-on-surface font-medium">43.0°C</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Sync Local</span>
+<span class="text-secondary font-medium">Atualizado</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Passagens Hoje</span>
+<span class="text-on-surface font-medium">142 acessos</span>
+</div>
+</div>
+</div>
+<!-- ITEM 5: Gateway Coordenador Master -->
+<div class="device-card cursor-pointer relative p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container-high/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_4px_16px_rgba(0,0,0,0.2)] transition-all duration-200" data-device-id="ESP-GW-05">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center text-primary shrink-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)]">
+<span class="material-symbols-outlined text-[22px]">router</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold tracking-tight">Gateway Coordenador LoRa / Zigbee Mesh</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Hub Central PoE • Shaft Técnico Central</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/20 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-code-sm text-code-sm font-bold">MASTER GATEWAY</span>
+</div>
+</div>
+<div class="mt-3.5 grid grid-cols-2 sm:grid-cols-3 gap-2 p-2.5 rounded-lg bg-surface-container-lowest/60 text-on-surface-variant font-code-sm text-code-sm">
+<div>
+<span class="text-outline uppercase text-[10px] block">Hardware</span>
+<span class="text-on-surface font-medium">ESP32 Ethernet PoE Olimex</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">MAC / IP</span>
+<span class="text-on-surface font-medium">00:1A:7D:DA:71:00 • .2</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Throughput Mesh</span>
+<span class="text-primary font-medium">142 pps (Normal)</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Uptime Sem Falhas</span>
+<span class="text-secondary font-medium">45 dias 12h</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Alimentação</span>
+<span class="text-on-surface font-medium">PoE 48V (IEEE 802.3af)</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Nós Conectados</span>
+<span class="text-on-surface font-medium">14 periféricos</span>
+</div>
+</div>
+</div>
+<!-- ITEM 6: Fechadura Estoque -->
+<div class="device-card cursor-pointer relative p-space-md rounded-xl bg-surface-container/60 hover:bg-surface-container-high/60 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_4px_16px_rgba(0,0,0,0.2)] transition-all duration-200" data-device-id="ESP-MAG-06">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface shrink-0 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+<span class="material-symbols-outlined text-[22px]">lock</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold tracking-tight">Fechadura Magnética Emergência / Estoque</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Eletroímã 280kgf • Acesso Restrito Minimercado</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm text-secondary font-bold">ONLINE</span>
+</div>
+</div>
+<div class="mt-3.5 grid grid-cols-2 sm:grid-cols-3 gap-2 p-2.5 rounded-lg bg-surface-container-lowest/60 text-on-surface-variant font-code-sm text-code-sm">
+<div>
+<span class="text-outline uppercase text-[10px] block">Hardware</span>
+<span class="text-on-surface font-medium">ESP32 Node Relé Duplo</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">MAC / IP</span>
+<span class="text-on-surface font-medium">48:E7:29:B3:88:99 • .88</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Status Eletroímã</span>
+<span class="text-secondary font-medium">Retido / Travado (12V)</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Sensor Magnético</span>
+<span class="text-on-surface font-medium">Porta Fechada</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Botão de Emergência</span>
+<span class="text-secondary font-medium">Em Espera (NC)</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">Consumo</span>
+<span class="text-on-surface font-medium">480mA</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: DETAILED HARDWARE INSPECTOR (Glass Panel) (5 cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md sticky top-16">
+<!-- MAIN INSPECTOR CARD -->
+<div class="p-space-md rounded-xl bg-surface-container/75 backdrop-blur-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_16px_36px_rgba(0,0,0,0.5)] flex flex-col gap-space-md">
+<!-- Inspector Head -->
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]">
+<span class="material-symbols-outlined text-[26px]">memory</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Catraca Principal ESP32-S3</h2>
+</div>
+<p class="font-code-sm text-code-sm text-outline">ID: ESP-CAT-01 • SN: SC2026-991204</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary/15 text-secondary font-bold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Online &amp; Calibrado
+          </span>
+</div>
+<!-- Telemetry Gauges / Live Diagnostics -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/80 shadow-[inset_0_1px_1px_rgba(0,0,0,0.5)] flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Telemetria em Tempo Real (SoC &amp; Periféricos)</span>
+<div class="grid grid-cols-2 gap-3">
+<!-- Metric A: Wi-Fi RSSI -->
+<div class="flex flex-col gap-1 p-2 rounded bg-surface-container/50">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Intensidade RSSI</span>
+<span class="font-code-sm text-code-sm text-secondary font-bold">-48 dBm</span>
+</div>
+<!-- 4-bar signal visualizer -->
+<div class="flex items-end gap-1 h-3 mt-1">
+<div class="w-1.5 h-1.5 rounded-sm bg-secondary"></div>
+<div class="w-1.5 h-2 rounded-sm bg-secondary"></div>
+<div class="w-1.5 h-2.5 rounded-sm bg-secondary"></div>
+<div class="w-1.5 h-3 rounded-sm bg-secondary"></div>
+<span class="font-label-sm text-label-sm text-outline ml-1.5 text-[10px]">Sinal Excelente</span>
+</div>
+</div>
+<!-- Metric B: Flash & SQLite SPIFFS -->
+<div class="flex flex-col gap-1 p-2 rounded bg-surface-container/50">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>SPIFFS Buffer</span>
+<span class="font-code-sm text-code-sm text-primary font-bold">32% Usado</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden mt-1.5">
+<div class="h-full bg-primary rounded-full" style="width: 32%"></div>
+</div>
+<span class="text-[10px] font-code-sm text-outline">10.000 chaves locais</span>
+</div>
+<!-- Metric C: Power / Battery -->
+<div class="flex flex-col gap-1 p-2 rounded bg-surface-container/50">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Tensão Fonte</span>
+<span class="font-code-sm text-code-sm text-secondary font-bold">12.4 VDC</span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary text-[11px] font-medium mt-1">
+<span class="material-symbols-outlined text-[14px]">battery_charging_full</span>
+<span>Nobreak 100% Estável</span>
+</div>
+</div>
+<!-- Metric D: SoC Temperature -->
+<div class="flex flex-col gap-1 p-2 rounded bg-surface-container/50">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Temp. do SoC</span>
+<span class="font-code-sm text-code-sm text-on-surface font-bold">41.2°C</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant text-[11px] mt-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">device_thermostat</span>
+<span>Margem Segura (&lt; 65°C)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hardware Direct Control Actions (macOS Style Buttons) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Ações de Controle Imediato</span>
+<!-- Primary Pulse Action -->
+<button class="w-full py-2.5 px-3 rounded-lg bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-title-md text-title-md font-bold flex items-center justify-center gap-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.3),0_4px_12px_rgba(62,144,255,0.3)] transition-all active:scale-[0.98]" id="btn-release-pass" type="button">
+<span class="material-symbols-outlined text-[20px]">lock_open</span>
+<span>Liberar Passagem Manual (Pulso 3s)</span>
+</button>
+<!-- Secondary Actions Grid -->
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-2.5 rounded-lg bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface font-title-md text-title-md flex items-center justify-center gap-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-all active:scale-[0.98]" id="btn-buzzer-test" type="button">
+<span class="material-symbols-outlined text-[17px] text-tertiary">volume_up</span>
+<span>Testar Buzzer</span>
+</button>
+<button class="py-2 px-2.5 rounded-lg bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface font-title-md text-title-md flex items-center justify-center gap-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-all active:scale-[0.98]" id="btn-reboot-node" type="button">
+<span class="material-symbols-outlined text-[17px] text-error">restart_alt</span>
+<span>Reboot Soft</span>
+</button>
+</div>
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface font-title-md text-title-md flex items-center justify-center gap-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-all active:scale-[0.98]" id="btn-sync-aes" type="button">
+<span class="material-symbols-outlined text-[17px] text-primary">key</span>
+<span>Forçar Sincronia de Chaves AES-256</span>
+</button>
+</div>
+<!-- Terminal Console / Live Event Log -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Console Serial &amp; Logs Ao Vivo</span>
+<span class="flex h-1.5 w-1.5 rounded-full bg-secondary animate-ping"></span>
+</div>
+<button class="text-[11px] text-primary hover:underline font-code-sm" id="btn-clear-log" type="button">Limpar Terminal</button>
+</div>
+<div class="h-44 overflow-y-auto rounded-lg bg-surface-container-lowest p-3 font-code-sm text-[11px] text-on-surface-variant flex flex-col gap-1.5 shadow-[inset_0_2px_6px_rgba(0,0,0,0.7)] select-text" id="hardware-console">
+<div class="text-outline">[00:43:12] <span class="text-secondary">ACK:</span> lat=12ms rssi=-48dbm temp=41.2C ram_free=184KB</div>
+<div class="text-on-surface">[00:42:46] <span class="text-primary font-semibold">TRIGGER:</span> Solenoide acionado (pulso 3200ms) • Apto 101 Bloco A</div>
+<div class="text-secondary">[00:42:46] <span class="text-secondary font-semibold">SENSOR:</span> Barreira IR rompida • Passagem confirmada</div>
+<div class="text-outline">[00:42:45] <span class="text-tertiary">QR_SCAN:</span> SHA-256 validado em 48ms (Visitante #AFD186E6)</div>
+<div class="text-outline">[00:41:00] <span class="text-secondary">WATCHDOG:</span> Timer OK • 0 faltas registradas em 24h</div>
+<div class="text-outline">[00:39:15] <span class="text-primary">SYNC:</span> 12 chaves de condomínio adicionadas via mesh</div>
+</div>
+</div>
+<!-- Warranty, Assembly & Technical Maintenance Info -->
+<div class="pt-3 flex flex-col gap-1.5 text-on-surface-variant font-label-md text-label-md bg-surface-container-lowest/50 p-2.5 rounded-lg shadow-[inset_0_1px_1px_rgba(0,0,0,0.3)]">
+<div class="flex items-center justify-between">
+<span class="text-outline">Instalação &amp; Homologação:</span>
+<span class="text-on-surface font-code-sm text-code-sm">12/01/2026</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Próxima Calibração Mecânica:</span>
+<span class="text-secondary font-code-sm text-code-sm font-semibold">12/07/2026</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline">Núcleo / Firmware:</span>
+<span class="text-on-surface font-code-sm text-code-sm">ESP-IDF v5.1 (FreeRTOS)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTION & SIMULATION SCRIPT -->
+<script>
+  (function() {
+    // 1. Device Cards Selection
+    const deviceCards = document.querySelectorAll('.device-card');
+    deviceCards.forEach(card => {
+      card.addEventListener('click', function() {
+        deviceCards.forEach(c => {
+          c.classList.remove('active-device', 'bg-surface-container/90');
+          c.classList.add('bg-surface-container/60');
+          const badge = c.querySelector('.font-code-sm.text-primary.font-bold');
+          if (badge && badge.textContent === 'EM FOCO') {
+            badge.remove();
+          }
+        });
+        
+        this.classList.remove('bg-surface-container/60');
+        this.classList.add('active-device', 'bg-surface-container/90');
+        
+        const titleEl = this.querySelector('h3');
+        if (titleEl && !titleEl.parentElement.querySelector('.font-code-sm.text-primary.font-bold')) {
+          const focusBadge = document.createElement('span');
+          focusBadge.className = 'font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-primary/10 text-primary font-bold ml-2';
+          focusBadge.textContent = 'EM FOCO';
+          titleEl.parentElement.appendChild(focusBadge);
+        }
+
+        // Add log entry
+        addConsoleLog('INSPECTOR', `Foco alterado para: ${titleEl ? titleEl.textContent : 'Dispositivo'}`);
+      });
+    });
+
+    // 2. Segmented Filter Controls
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        filterTabs.forEach(t => {
+          t.className = 'filter-tab px-3 py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container/50 transition-all';
+        });
+        this.className = 'filter-tab px-3 py-1 rounded-md font-label-md text-label-md bg-surface-container-high text-on-surface font-semibold shadow-[0_2px_6px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)] transition-all';
+      });
+    });
+
+    // 3. Search Filter in Table
+    const searchInput = document.getElementById('hardware-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const term = e.target.value.toLowerCase();
+        deviceCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(term)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // 4. Live Console Helper
+    const consoleBox = document.getElementById('hardware-console');
+    function addConsoleLog(tag, msg, type = 'normal') {
+      if (!consoleBox) return;
+      const now = new Date();
+      const timeStr = now.toTimeString().split(' ')[0];
+      const div = document.createElement('div');
+      
+      let colorClass = 'text-outline';
+      let tagClass = 'text-primary';
+      if (type === 'success') { tagClass = 'text-secondary font-bold'; }
+      if (type === 'warn') { tagClass = 'text-tertiary font-bold'; }
+      if (type === 'danger') { tagClass = 'text-error font-bold'; }
+
+      div.className = colorClass;
+      div.innerHTML = `[${timeStr}] <span class="${tagClass}">${tag}:</span> ${msg}`;
+      consoleBox.prepend(div);
+    }
+
+    // 5. Button Actions
+    const btnRelease = document.getElementById('btn-release-pass');
+    if (btnRelease) {
+      btnRelease.addEventListener('click', function() {
+        this.disabled = true;
+        this.classList.add('opacity-70');
+        addConsoleLog('TRIGGER', 'Comando Manual: Pulso 3000ms enviado ao relé solenoide.', 'success');
+        setTimeout(() => {
+          addConsoleLog('SENSOR', 'Passagem detectada / Eletroímã rearmado.', 'warn');
+          btnRelease.disabled = false;
+          btnRelease.classList.remove('opacity-70');
+        }, 3200);
+      });
+    }
+
+    const btnBuzzer = document.getElementById('btn-buzzer-test');
+    if (btnBuzzer) {
+      btnBuzzer.addEventListener('click', function() {
+        addConsoleLog('BUZZER', 'Sinal sonoro 4kHz emitido por 600ms (Auto-teste OK).', 'warn');
+      });
+    }
+
+    const btnReboot = document.getElementById('btn-reboot-node');
+    if (btnReboot) {
+      btnReboot.addEventListener('click', function() {
+        addConsoleLog('SYSTEM', 'Enviando esp_restart() via comando criptografado...', 'danger');
+        setTimeout(() => {
+          addConsoleLog('BOOT', 'ESP32-S3 Pro inicializado em 410ms. Watchdog ativo.', 'success');
+        }, 1200);
+      });
+    }
+
+    const btnSyncAes = document.getElementById('btn-sync-aes');
+    if (btnSyncAes) {
+      btnSyncAes.addEventListener('click', function() {
+        addConsoleLog('CRYPTO', 'Handshake AES-256 GCM concluído com Gateway Coordenador.', 'success');
+      });
+    }
+
+    const btnPing = document.getElementById('btn-ping-all');
+    const iconPing = document.getElementById('icon-ping');
+    if (btnPing) {
+      btnPing.addEventListener('click', function() {
+        if (iconPing) iconPing.classList.add('animate-spin');
+        addConsoleLog('PING', 'Disparando broadcast ICMP/Mesh ping para os 6 dispositivos...');
+        setTimeout(() => {
+          if (iconPing) iconPing.classList.remove('animate-spin');
+          addConsoleLog('PING', '6/6 respostas recebidas. RTT Médio: 13.8ms.', 'success');
+        }, 800);
+      });
+    }
+
+    const btnClearLog = document.getElementById('btn-clear-log');
+    if (btnClearLog) {
+      btnClearLog.addEventListener('click', function() {
+        if (consoleBox) consoleBox.innerHTML = '';
+        addConsoleLog('TERMINAL', 'Buffer limpo pelo operador.');
+      });
+    }
+
+  })();
+</script></main></div></body></html>

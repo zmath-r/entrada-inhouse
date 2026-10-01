@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>SmartCondo</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131c;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#dfe2ee", "surface-container-high": "#262a33", "surface-container-highest": "#31353e", "primary-container": "#3e90ff", "surface": "#0f131c", "surface-container": "#1c2028", "secondary": "#47e266", "tertiary-container": "#ce7f00", "primary-fixed": "#d6e3ff", "on-surface-variant": "#c0c6d6", "error": "#ffb4ab", "secondary-container": "#09bf49", "on-primary-fixed-variant": "#00468d", "surface-container-lowest": "#0a0e16", "tertiary": "#ffb868", "on-secondary-container": "#004615", "on-secondary": "#003910", "on-surface": "#dfe2ee", "inverse-primary": "#005db8", "on-primary-container": "#002957", "on-primary-fixed": "#001b3e", "tertiary-fixed-dim": "#ffb868", "secondary-fixed": "#6cff82", "on-tertiary": "#482900", "inverse-on-surface": "#2c3039", "on-tertiary-fixed": "#2b1700", "background": "#0f131c", "surface-container-low": "#181c24", "on-secondary-fixed-variant": "#00531a", "on-secondary-fixed": "#002106", "error-container": "#93000a", "surface-tint": "#aac7ff", "primary-fixed-dim": "#aac7ff", "on-error": "#690005", "secondary-fixed-dim": "#47e266", "outline": "#8b91a0", "surface-dim": "#0f131c", "surface-bright": "#353942", "tertiary-fixed": "#ffddbb", "primary": "#aac7ff", "on-tertiary-fixed-variant": "#673d00", "on-error-container": "#ffdad6", "surface-variant": "#31353e", "on-tertiary-container": "#3f2300", "on-primary": "#003064", "outline-variant": "#414754", "on-background": "#dfe2ee" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-sm": "0.5rem", "space-xl": "2rem", "space-md": "1rem", "gutter": "1.25rem", "margin-mobile": "1rem", "margin": "1.5rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem" }, "fontFamily": { "label-md": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "code-sm": ["JetBrains Mono"], "headline-lg": ["Inter"], "body-md": ["Inter"], "title-md": ["Inter"], "display-lg-mobile": ["Inter"], "display-lg": ["Inter"], "title-lg": ["Inter"], "headline-md": ["Inter"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.0em", "fontWeight": "500" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "code-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.003em", "fontWeight": "400" }], "title-md": ["15px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "title-lg": ["17px", { "lineHeight": "22px", "letterSpacing": "-0.012em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col justify-between h-24 px-margin-mobile"><div class="flex items-center justify-between h-7 pt-1"><span class="font-label-sm text-label-sm font-semibold tracking-tight text-on-surface pl-1">09:41</span><div class="flex items-center gap-space-xs text-on-surface pr-1"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[17px]">battery_full</span></div></div><div class="flex items-center justify-between pb-2"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface tracking-tight">Jose Matheus</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal">• Apto 101</span></div><div class="flex items-center gap-space-xs mt-0.5"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-sm text-label-sm text-secondary tracking-wide uppercase font-semibold">Dentro do Minimercado</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Sair" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">logout</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex flex-col relative w-full pt-24 pb-28 bg-surface"><div class="flex flex-col w-full px-margin-mobile gap-space-md">
+<!-- Segmented Control Apple iOS Liquid Glass Style -->
+<div class="relative w-full p-1 bg-surface-container-lowest/80 backdrop-blur-2xl rounded-2xl flex items-center shadow-inner">
+<div class="grid grid-cols-2 w-full gap-1">
+<button class="flex items-center justify-center gap-space-xs py-2.5 px-3 rounded-xl bg-surface-container-high/90 text-on-surface shadow-[0_2px_12px_rgba(0,0,0,0.35)] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">qr_code_scanner</span>
+<span class="font-title-md text-title-md tracking-tight text-on-surface">Chave Dinâmica</span>
+</button>
+<button class="relative flex items-center justify-center gap-space-xs py-2.5 px-3 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+<span class="font-title-md text-title-md tracking-tight">Convites</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-primary/20 text-primary font-code-sm text-label-sm">2</span>
+</button>
+</div>
+</div>
+<!-- Hero Card: Dynamic Pass Obsidian Console -->
+<div class="relative w-full rounded-3xl bg-surface-container/60 backdrop-blur-3xl p-space-lg flex flex-col items-center text-center shadow-[0_24px_48px_rgba(0,0,0,0.5)] overflow-hidden">
+<!-- Ambient Lighting Glows -->
+<div class="absolute -top-16 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 right-0 w-44 h-44 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header & Badge -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest/60 backdrop-blur-md mb-space-sm shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Acesso Ativo · TOTP v2</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Acesso ao Minimercado</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-1">
+        Chave dinâmica criptografada com rotação automática a cada 30 segundos.
+      </p>
+</div>
+<!-- QR Code & Countdown Visual Frame -->
+<div class="relative z-10 my-space-lg flex flex-col items-center justify-center">
+<!-- High Contrast Glow Glass Housing -->
+<div class="relative p-space-md rounded-2xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_16px_36px_rgba(0,0,0,0.6)] flex items-center justify-center">
+<!-- Corner Reticles for High Tech Apple Optics -->
+<div class="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-primary/50 rounded-tl"></div>
+<div class="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-primary/50 rounded-tr"></div>
+<div class="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-primary/50 rounded-bl"></div>
+<div class="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-primary/50 rounded-br"></div>
+<!-- Crisp QR Code SVG Replica with High Fidelity Geometry -->
+<svg class="w-48 h-48 text-on-surface transition-transform duration-300 hover:scale-105" fill="currentColor" id="qr-matrix" viewbox="0 0 100 100">
+<!-- Position Detection Patterns (Top-Left) -->
+<rect fill="currentColor" height="26" rx="3" width="26" x="6" y="6"></rect>
+<rect class="text-surface-container-lowest" fill="currentColor" height="18" rx="2" width="18" x="10" y="10"></rect>
+<rect fill="currentColor" height="10" rx="1.5" width="10" x="14" y="14"></rect>
+<!-- Position Detection Patterns (Top-Right) -->
+<rect fill="currentColor" height="26" rx="3" width="26" x="68" y="6"></rect>
+<rect class="text-surface-container-lowest" fill="currentColor" height="18" rx="2" width="18" x="72" y="10"></rect>
+<rect fill="currentColor" height="10" rx="1.5" width="10" x="76" y="14"></rect>
+<!-- Position Detection Patterns (Bottom-Left) -->
+<rect fill="currentColor" height="26" rx="3" width="26" x="6" y="68"></rect>
+<rect class="text-surface-container-lowest" fill="currentColor" height="18" rx="2" width="18" x="10" y="72"></rect>
+<rect fill="currentColor" height="10" rx="1.5" width="10" x="14" y="76"></rect>
+<!-- Precision Data Cells (Obsidian Matrix) -->
+<rect height="6" rx="1" width="4" x="36" y="8"></rect>
+<rect height="4" rx="1" width="8" x="44" y="8"></rect>
+<rect height="4" rx="1" width="6" x="56" y="10"></rect>
+<rect height="4" rx="1" width="4" x="36" y="18"></rect>
+<rect height="8" rx="1" width="6" x="46" y="16"></rect>
+<rect height="4" rx="1" width="4" x="58" y="18"></rect>
+<rect height="4" rx="1" width="6" x="8" y="38"></rect>
+<rect height="6" rx="1" width="4" x="18" y="38"></rect>
+<rect height="8" rx="1" width="4" x="8" y="48"></rect>
+<rect height="4" rx="1" width="8" x="16" y="50"></rect>
+<rect height="4" rx="1" width="4" x="22" y="44"></rect>
+<!-- Center Dynamic Cluster -->
+<rect class="text-primary" fill="currentColor" height="8" rx="2" width="8" x="34" y="34"></rect>
+<rect height="4" rx="1" width="6" x="46" y="34"></rect>
+<rect height="6" rx="1" width="10" x="56" y="32"></rect>
+<rect height="8" rx="1" width="6" x="36" y="46"></rect>
+<rect class="text-secondary" fill="currentColor" height="8" rx="2" width="8" x="46" y="46"></rect>
+<rect height="6" rx="1" width="6" x="58" y="44"></rect>
+<rect height="4" rx="1" width="8" x="70" y="36"></rect>
+<rect height="6" rx="1" width="10" x="82" y="36"></rect>
+<rect height="8" rx="1" width="6" x="68" y="46"></rect>
+<rect height="6" rx="1" width="8" x="78" y="48"></rect>
+<rect height="8" rx="1" width="4" x="90" y="46"></rect>
+<rect height="4" rx="1" width="8" x="36" y="60"></rect>
+<rect height="6" rx="1" width="6" x="48" y="58"></rect>
+<rect height="6" rx="1" width="6" x="58" y="60"></rect>
+<rect height="8" rx="1" width="4" x="70" y="58"></rect>
+<rect height="8" rx="1" width="6" x="36" y="70"></rect>
+<rect height="6" rx="1" width="10" x="46" y="68"></rect>
+<rect height="4" rx="1" width="4" x="60" y="72"></rect>
+<rect height="6" rx="1" width="8" x="70" y="72"></rect>
+<rect height="8" rx="1" width="6" x="82" y="68"></rect>
+<rect height="6" rx="1" width="10" x="36" y="82"></rect>
+<rect height="8" rx="1" width="6" x="50" y="80"></rect>
+<rect height="4" rx="1" width="8" x="60" y="84"></rect>
+<rect height="6" rx="1" width="6" x="72" y="82"></rect>
+<rect height="6" rx="1" width="8" x="84" y="82"></rect>
+</svg>
+<!-- Subtle Scan Beam line simulation -->
+<div class="absolute inset-x-3 top-4 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-60 blur-xs pointer-events-none"></div>
+</div>
+<!-- Live Circular Countdown Dial -->
+<div class="flex items-center gap-space-xs mt-space-md">
+<div class="relative flex items-center justify-center w-7 h-7">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary transition-all duration-1000 ease-linear" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" id="totp-progress" stroke="currentColor" stroke-dasharray="80, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<span class="absolute material-symbols-outlined text-[13px] text-primary animate-pulse">timer</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface font-medium tracking-tight">
+          Expira em <span class="text-primary font-semibold" id="totp-timer">24s</span>
+</span>
+</div>
+<!-- Backup OTP Numeric Code -->
+<div class="mt-space-sm flex flex-col items-center">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Código Numérico Alternativo</span>
+<div class="flex items-center gap-space-xs mt-1 px-3 py-1.5 rounded-xl bg-surface-container-lowest/80 shadow-sm">
+<span class="font-code-sm text-[16px] leading-[22px] tracking-[0.2em] font-bold text-on-surface" id="totp-code">849 • 203</span>
+<button aria-label="Copiar código numérico" class="ml-1 text-on-surface-variant hover:text-primary transition-colors" id="btn-copy" title="Copiar código" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Apple Native High-Energy Primary Action -->
+<button class="w-full relative overflow-hidden flex items-center justify-center gap-space-xs py-3.5 px-space-md rounded-2xl bg-primary text-on-primary font-title-md text-title-md shadow-[0_8px_20px_rgba(62,144,255,0.35)] active:scale-[0.98] transition-transform" id="btn-refresh" type="button">
+<div class="absolute inset-0 bg-gradient-to-t from-black/15 to-transparent pointer-events-none"></div>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-180">sync</span>
+<span>Gerar Novo QR Code</span>
+</button>
+<!-- Bottom Cryptographic Badge -->
+<div class="flex items-center gap-1.5 mt-space-md text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-tight text-on-surface-variant font-medium">
+        Protegido por Anti-Passback, ESP32 SHA-256 e LGPD
+      </span>
+</div>
+</div>
+<!-- Realtime Telemetry & Store Status Bento Grid -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Occupancy & Hardware Relay Stat Card -->
+<div class="p-space-md rounded-2xl bg-surface-container/70 backdrop-blur-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">storefront</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-title-md text-title-md text-on-surface">Ocupação do Minimercado</span>
+<span class="font-body-md text-body-md text-on-surface-variant">3 de 6 pessoas · Fluxo tranquilo</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-secondary/15 px-2.5 py-1 rounded-full text-secondary">
+<span class="relative flex h-1.5 w-1.5">
+<span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase font-semibold">Livre</span>
+</div>
+</div>
+<!-- Apartment Credential Card -->
+<div class="p-space-md rounded-2xl bg-surface-container/70 backdrop-blur-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">shield_person</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-title-md text-title-md text-on-surface">Apto 101 - Bloco A</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Titular Solidário Autorizado</span>
+</div>
+</div>
+<span class="font-code-sm text-label-sm text-on-surface-variant font-medium">Porta 01</span>
+</div>
+<!-- Quick Proximity Guideline Glass Note -->
+<div class="p-space-md rounded-2xl bg-surface-container-low/90 backdrop-blur-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-tertiary mt-0.5">contactless</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-left leading-snug">
+        Aproxime o visor da catraca a cerca de <span class="text-on-surface font-semibold">15 cm</span> para liberação instantânea da solenoide e desbloqueio da porta.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  (() => {
+    let timeLeft = 24;
+    const maxTime = 30;
+    const timerElem = document.getElementById('totp-timer');
+    const codeElem = document.getElementById('totp-code');
+    const progressCircle = document.getElementById('totp-progress');
+    const refreshBtn = document.getElementById('btn-refresh');
+    const copyBtn = document.getElementById('btn-copy');
+
+    function updateView() {
+      if (timerElem) timerElem.textContent = `${timeLeft}s`;
+      if (progressCircle) {
+        const percent = (timeLeft / maxTime) * 100;
+        progressCircle.setAttribute('stroke-dasharray', `${percent}, 100`);
+      }
+    }
+
+    function generateCode() {
+      const part1 = Math.floor(100 + Math.random() * 900);
+      const part2 = Math.floor(100 + Math.random() * 900);
+      if (codeElem) codeElem.textContent = `${part1} \u2022 ${part2}`;
+      timeLeft = 30;
+      updateView();
+    }
+
+    setInterval(() => {
+      timeLeft--;
+      if (timeLeft <= 0) {
+        generateCode();
+      } else {
+        updateView();
+      }
+    }, 1000);
+
+    if (refreshBtn) {
+      refreshBtn.addEventListener('click', () => {
+        refreshBtn.classList.add('scale-95');
+        setTimeout(() => refreshBtn.classList.remove('scale-95'), 150);
+        generateCode();
+      });
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        const text = codeElem ? codeElem.textContent.replace(/[^\d]/g, '') : '';
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(text).then(() => {
+            const icon = copyBtn.querySelector('span');
+            if (icon) {
+              icon.textContent = 'check';
+              icon.classList.add('text-secondary');
+              setTimeout(() => {
+                icon.textContent = 'content_copy';
+                icon.classList.remove('text-secondary');
+              }, 1800);
+            }
+          });
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.3)]" data-active-classes="text-primary"><div class="h-16 px-gutter-mobile flex items-center justify-around"><a class="w-16 h-11 flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="chave-dinamica" href="#"><span class="material-symbols-outlined text-[22px]">qr_code_scanner</span><span class="font-label-sm text-label-sm mt-0.5">Chave</span></a><a class="w-16 h-11 flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="convites-solidarios" href="#"><span class="material-symbols-outlined text-[22px]">group_add</span><span class="font-label-sm text-label-sm mt-0.5">Convites</span></a><a class="w-16 h-11 flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="historico-de-compras-e-acessos" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Histórico</span></a><a class="w-16 h-11 flex flex-col items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="notificacoes-e-suporte" href="#"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="font-label-sm text-label-sm mt-0.5">Avisos</span></a></div></nav></body></html>

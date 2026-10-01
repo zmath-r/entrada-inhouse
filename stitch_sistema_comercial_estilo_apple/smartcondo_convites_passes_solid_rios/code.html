@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error":"#690005","secondary-container":"#09bf49","secondary":"#47e266","on-primary-fixed-variant":"#00468d","on-tertiary":"#482900","secondary-fixed":"#6cff82","inverse-surface":"#dfe2ee","surface-bright":"#353942","on-error-container":"#ffdad6","surface-container-high":"#262a33","primary-fixed-dim":"#aac7ff","tertiary":"#ffb868","inverse-primary":"#005db8","on-primary-container":"#002957","tertiary-fixed-dim":"#ffb868","primary-fixed":"#d6e3ff","error":"#ffb4ab","inverse-on-surface":"#2c3039","on-secondary":"#003910","on-surface":"#dfe2ee","tertiary-container":"#ce7f00","on-tertiary-container":"#3f2300","surface-dim":"#0f131c","on-background":"#dfe2ee","surface-container-highest":"#31353e","surface-container-lowest":"#0a0e16","on-primary-fixed":"#001b3e","surface-tint":"#aac7ff","surface-container-low":"#181c24","tertiary-fixed":"#ffddbb","on-secondary-fixed-variant":"#00531a","primary-container":"#3e90ff","surface-container":"#1c2028","outline":"#8b91a0","outline-variant":"#414754","surface-variant":"#31353e","on-surface-variant":"#c0c6d6","on-tertiary-fixed-variant":"#673d00","on-secondary-container":"#004615","error-container":"#93000a","on-primary":"#003064","primary":"#aac7ff","on-tertiary-fixed":"#2b1700","background":"#0f131c","secondary-fixed-dim":"#47e266","surface":"#0f131c","on-secondary-fixed":"#002106"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xl":"2rem","space-sm":"0.5rem","margin":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter":"1.25rem","gutter-mobile":"0.75rem"},"fontFamily":{"headline-md":["Inter"],"display-lg-mobile":["Inter"],"label-md":["Inter"],"display-lg":["Inter"],"code-sm":["JetBrains Mono"],"body-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"title-lg":["Inter"],"title-md":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.0em","fontWeight":"500"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"-0.003em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"600"}],"title-lg":["17px",{"lineHeight":"22px","letterSpacing":"-0.012em","fontWeight":"600"}],"title-md":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased select-none"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/75 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="pt-4 px-5 pb-3 flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-[#FF5F56] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div><div class="w-3 h-3 rounded-full bg-[#FFBD2E] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div><div class="w-3 h-3 rounded-full bg-[#27C93F] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div></div><div class="px-5 pt-3 pb-5"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">domain</span></div><div><h1 class="font-title-md text-title-md text-on-surface tracking-tight leading-none">SmartCondo</h1><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Painel Administrativo</p></div></div></div><div class="px-5 pb-2"><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Administração</span></div><nav class="flex flex-col gap-1 px-3" data-active-classes="bg-surface-container-high text-on-surface font-title-md shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-lg transition-all bg-surface-container-high text-on-surface font-title-md shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]" data-path="monitoramento" href="#"><span class="material-symbols-outlined text-[18px]">vital_signs</span><span>Monitoramento</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="moradores-e-unidades" href="#"><span class="material-symbols-outlined text-[18px]">group</span><span>Moradores &amp; Unidades</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="convites-e-passes" href="#"><span class="material-symbols-outlined text-[18px]">qr_code_2</span><span>Convites &amp; Passes</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dispositivos-iot" href="#"><span class="material-symbols-outlined text-[18px]">memory</span><span>Dispositivos IoT</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Configurações</span></a></nav></div><div class="p-3"><div class="p-2.5 rounded-xl bg-surface-container/60 backdrop-blur-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight">Síndico Geral</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Bloco A</span></div></div><a class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error transition-colors" data-path="logout" href="#" title="Encerrar Sessão"><span class="material-symbols-outlined text-[18px]">power_settings_new</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/75 backdrop-blur-2xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-3"><div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-secondary/10"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-code-sm text-code-sm text-secondary uppercase tracking-wide">Hardware ONLINE</span></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-high/60 backdrop-blur-md text-on-surface-variant w-64"><span class="material-symbols-outlined text-[16px] text-outline">search</span><span class="font-body-md text-body-md text-outline flex-1">Buscar unidade, tag ou log...</span><kbd class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]">⌘K</kbd></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative w-full pt-14 px-space-lg pb-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Script de Sincronização do Menu Lateral -->
+<script>
+    (function () {
+      const activePath = 'convites-e-passes';
+      document.querySelectorAll('aside nav a').forEach((link) => {
+        if (link.getAttribute('data-path') === activePath) {
+          link.className = 'flex items-center gap-3 px-3 py-2 rounded-lg bg-surface-container-high text-on-surface font-title-md shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-all';
+        } else {
+          link.className = 'flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all';
+        }
+      });
+    })();
+  </script>
+<!-- Ambient Obsidian Refraction Behind Top Area -->
+<div class="relative w-full mb-6">
+<div class="absolute -top-10 left-1/4 w-96 h-44 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute -top-12 right-1/4 w-80 h-40 bg-secondary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Header & Quick Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-5 border-b border-white/[0.06]">
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2.5">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight">Convites &amp; Passes Solidários</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary/10 border border-secondary/25 text-secondary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+            GATEWAY DE SEGURANÇA ATIVO
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest/60 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[13px] text-tertiary">schedule</span>
+            MÁX 4H / PASSE
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Controle de links temporários de acesso ao minimercado, auditoria de emissão de moradores e políticas de responsabilidade solidária.
+        </p>
+</div>
+<!-- Action Buttons Group -->
+<div class="flex items-center gap-2.5 flex-wrap">
+<button class="h-9 px-3.5 rounded-lg bg-white/[0.06] hover:bg-white/[0.12] text-on-surface font-title-md text-title-md inline-flex items-center gap-2 transition-colors shadow-sm cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[17px] text-outline">file_download</span>
+<span>Exportar Log</span>
+</button>
+<button class="h-9 px-3.5 rounded-lg bg-error-container/25 hover:bg-error-container/40 text-error font-title-md text-title-md inline-flex items-center gap-2 transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[17px]">gpp_bad</span>
+<span>Revogar Ativos</span>
+</button>
+<button class="h-9 px-4 rounded-lg bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-title-md text-title-md inline-flex items-center gap-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.25)] transition-all cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+<span>+ Emitir Passe Administrativo</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Cards Grid (5 KPIs) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 mt-5">
+<!-- Card 1: Passes Ativos -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container/70 backdrop-blur-xl shadow-sm">
+<div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Passes Ativos Agora</span>
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">14</span>
+<span class="font-label-sm text-label-sm text-secondary">convites válidos</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-white/[0.04] flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>12 em uso</span>
+<span class="text-on-surface-variant">2 aguardando</span>
+</div>
+</div>
+<!-- Card 2: Emissões 24h -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container/70 backdrop-blur-xl shadow-sm">
+<div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Emissões 24h</span>
+<span class="material-symbols-outlined text-[16px] text-primary">add_circle</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">48</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center">
+<span class="material-symbols-outlined text-[13px]">trending_up</span> +18%
+          </span>
+</div>
+<!-- Sparkline sutil -->
+<div class="mt-2.5 pt-2 border-t border-white/[0.04] flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Média semanal 40/dia</span>
+<svg class="w-16 h-3.5 text-primary" fill="none" viewbox="0 0 60 14">
+<path d="M1 12L12 9L24 10L36 5L48 7L59 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<!-- Card 3: Taxa de Utilização -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container/70 backdrop-blur-xl shadow-sm">
+<div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Taxa de Utilização</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">86.4%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">conversão</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-white/[0.04] flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>42 entradas</span>
+<span class="text-on-surface-variant">de 48 gerados</span>
+</div>
+</div>
+<!-- Card 4: Expirados sem Uso -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container/70 backdrop-blur-xl shadow-sm">
+<div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Expirados sem Uso</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">timer_off</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">6</span>
+<span class="font-label-sm text-label-sm text-tertiary">timeout 4h</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-white/[0.04] flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Cancelamento auto</span>
+<span class="text-on-surface-variant">12.5% do total</span>
+</div>
+</div>
+<!-- Card 5: Violações / Alertas -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container/70 backdrop-blur-xl shadow-sm">
+<div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"></div>
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Violações / Anti-Passback</span>
+<span class="material-symbols-outlined text-[16px] text-error">shield_lock</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-error">1</span>
+<span class="font-label-sm text-label-sm text-error/90">tentativa bloqueada</span>
+</div>
+<div class="mt-2.5 pt-2 border-t border-white/[0.04] flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Apto 203 Bloco A</span>
+<span class="text-error font-code-sm text-code-sm">Reuso QR</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filters & Controls Bar (Apple Segmented Style) -->
+<div class="p-2 rounded-xl bg-surface-container/50 backdrop-blur-md mb-5 flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-3 shadow-sm">
+<!-- Segmented Filter Buttons -->
+<div class="flex items-center p-1 rounded-lg bg-surface-container-lowest/80 overflow-x-auto">
+<button class="px-3 py-1.5 rounded-md bg-white/[0.12] text-on-surface font-title-md text-title-md shadow-[0_1px_4px_rgba(0,0,0,0.3)] whitespace-nowrap cursor-pointer" type="button">
+        Todos os Passes <span class="font-code-sm text-code-sm text-on-surface-variant ml-1">48</span>
+</button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-white/[0.04] font-title-md text-title-md transition-all whitespace-nowrap cursor-pointer" type="button">
+        Ativos Agora <span class="font-code-sm text-code-sm text-secondary ml-1">14</span>
+</button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-white/[0.04] font-title-md text-title-md transition-all whitespace-nowrap cursor-pointer" type="button">
+        Utilizados Hoje <span class="font-code-sm text-code-sm ml-1">28</span>
+</button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-white/[0.04] font-title-md text-title-md transition-all whitespace-nowrap cursor-pointer" type="button">
+        Expirados <span class="font-code-sm text-code-sm text-tertiary ml-1">6</span>
+</button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-white/[0.04] font-title-md text-title-md transition-all whitespace-nowrap cursor-pointer" type="button">
+        Suspeitos <span class="font-code-sm text-code-sm text-error ml-1">1</span>
+</button>
+</div>
+<!-- Search & Selects -->
+<div class="flex items-center gap-2.5 flex-1 max-w-xl">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[16px] text-outline">search</span>
+<input class="w-full h-9 pl-9 pr-12 rounded-lg bg-surface-container-high/80 text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest transition-all" placeholder="Filtrar visitante, anfitrião, token ou apto..." type="text"/>
+<kbd class="absolute right-2.5 top-1/2 -translate-y-1/2 font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-outline">⌘F</kbd>
+</div>
+<!-- Dropdown Bloco -->
+<div class="relative">
+<select class="h-9 px-3 pr-8 rounded-lg bg-surface-container-high/80 text-on-surface font-title-md text-title-md appearance-none focus:outline-none cursor-pointer">
+<option>Todos os Blocos</option>
+<option>Bloco A</option>
+<option>Bloco B</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-[16px] text-outline pointer-events-none">expand_more</span>
+</div>
+<!-- Dropdown Ordem -->
+<div class="relative">
+<select class="h-9 px-3 pr-8 rounded-lg bg-surface-container-high/80 text-on-surface font-title-md text-title-md appearance-none focus:outline-none cursor-pointer">
+<option>Mais recentes</option>
+<option>Expiração próxima</option>
+<option>Por morador</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-[16px] text-outline pointer-events-none">swap_vert</span>
+</div>
+</div>
+</div>
+<!-- Main Split Layout (macOS Finder / Xcode Style) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+<!-- Left / Center: Passes Master Table (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-3">
+<div class="rounded-2xl bg-surface-container/40 backdrop-blur-xl shadow-sm overflow-hidden">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-2 px-4 py-3 bg-surface-container-highest/30 text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<div class="col-span-3">Token / Identificador</div>
+<div class="col-span-3">Visitante</div>
+<div class="col-span-3">Anfitrião Solidário</div>
+<div class="col-span-2">Validade</div>
+<div class="col-span-1 text-right">Ação</div>
+</div>
+<!-- Row 1: Nicollas Akylis (Selected / Inspector Active) -->
+<div class="group grid grid-cols-12 gap-2 px-4 py-3.5 items-center bg-white/[0.04] shadow-[inset_2px_0_0_#0A84FF] transition-all cursor-pointer">
+<div class="col-span-3 flex items-center gap-2.5 min-w-0">
+<!-- Mini QR Preview -->
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-sm text-code-sm text-primary font-semibold truncate flex items-center gap-1">
+                #AFD186E6
+                <button class="text-outline hover:text-on-surface" title="Copiar Token" type="button"><span class="material-symbols-outlined text-[13px]">content_copy</span></button>
+</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+                Ativo • 1 entrada
+              </span>
+</div>
+</div>
+<div class="col-span-3 flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Nicollas Akylis</span>
+<span class="font-code-sm text-code-sm text-outline truncate">+55 11 ••••-8910</span>
+</div>
+<div class="col-span-3 flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-primary-container/30 text-primary flex items-center justify-center font-title-md text-[11px] shrink-0">
+              JM
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface truncate">Jose Matheus</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Apto 101 • Bloco A</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col">
+<span class="font-title-md text-title-md text-secondary">04:56 restante</span>
+<span class="font-label-sm text-label-sm text-outline">Expira 05:52</span>
+</div>
+<div class="col-span-1 flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-md hover:bg-white/[0.08] text-primary flex items-center justify-center transition-colors cursor-pointer" title="Inspecionar" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Row 2: Drauzio Varella (Utilizado) -->
+<div class="group grid grid-cols-12 gap-2 px-4 py-3.5 items-center hover:bg-white/[0.02] transition-all cursor-pointer">
+<div class="col-span-3 flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-sm text-code-sm text-on-surface truncate">#14788259</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Utilizado</span>
+</div>
+</div>
+<div class="col-span-3 flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Drauzio Varella</span>
+<span class="font-code-sm text-code-sm text-outline truncate">CPF •••.419.008-••</span>
+</div>
+<div class="col-span-3 flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-title-md text-[11px] shrink-0">
+              JM
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface truncate">Jose Matheus</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Apto 101 • Bloco A</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface-variant">Entrada às 00:42</span>
+<span class="font-label-sm text-label-sm text-outline">Duração: 14 min</span>
+</div>
+<div class="col-span-1 flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-md hover:bg-white/[0.08] text-outline hover:text-on-surface flex items-center justify-center transition-colors cursor-pointer" title="Inspecionar" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Row 3: Lucas Albuquerque (Dentro do Mercado) -->
+<div class="group grid grid-cols-12 gap-2 px-4 py-3.5 items-center bg-primary/5 hover:bg-primary/10 transition-all cursor-pointer">
+<div class="col-span-3 flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded bg-primary/15 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">shopping_basket</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-sm text-code-sm text-primary font-semibold truncate">#88931201</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                Dentro do Minimercado
+              </span>
+</div>
+</div>
+<div class="col-span-3 flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Lucas Albuquerque</span>
+<span class="font-code-sm text-code-sm text-outline truncate">+55 11 ••••-3321</span>
+</div>
+<div class="col-span-3 flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-title-md text-[11px] shrink-0">
+              CD
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface truncate">Camila Duarte</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Apto 502 • Bloco B</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col">
+<span class="font-title-md text-title-md text-primary">Há 12 min</span>
+<span class="font-label-sm text-label-sm text-outline">Catraca Sul #02</span>
+</div>
+<div class="col-span-1 flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-md hover:bg-white/[0.08] text-primary flex items-center justify-center transition-colors cursor-pointer" title="Inspecionar" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Row 4: Apto 203 Reuso (Bloqueado / Violação) -->
+<div class="group grid grid-cols-12 gap-2 px-4 py-3.5 items-center bg-error-container/10 hover:bg-error-container/20 transition-all cursor-pointer">
+<div class="col-span-3 flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded bg-error-container/40 flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[18px]">block</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-sm text-code-sm text-error font-semibold truncate">#99102431</span>
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider">Violação Anti-Passback</span>
+</div>
+</div>
+<div class="col-span-3 flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Não Identificado</span>
+<span class="font-code-sm text-code-sm text-error truncate">Tentativa reuso pós-saída</span>
+</div>
+<div class="col-span-3 flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-error-container/30 text-error flex items-center justify-center font-title-md text-[11px] shrink-0">
+              RF
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface truncate">Rodrigo Fontes</span>
+<span class="font-label-sm text-label-sm text-error truncate">Apto 203 • Bloco A (Notificado)</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col">
+<span class="font-body-md text-body-md text-error">Bloqueado 00:29</span>
+<span class="font-label-sm text-label-sm text-outline">Catraca travada auto</span>
+</div>
+<div class="col-span-1 flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-md hover:bg-error-container/30 text-error flex items-center justify-center transition-colors cursor-pointer" title="Inspecionar Infração" type="button">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</button>
+</div>
+</div>
+<!-- Row 5: Sofia Mendonça (Expirado) -->
+<div class="group grid grid-cols-12 gap-2 px-4 py-3.5 items-center hover:bg-white/[0.02] opacity-75 hover:opacity-100 transition-all cursor-pointer">
+<div class="col-span-3 flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-sm text-code-sm text-outline truncate">#72194012</span>
+<span class="font-label-sm text-label-sm text-tertiary">Expirado sem uso</span>
+</div>
+</div>
+<div class="col-span-3 flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Sofia Mendonça</span>
+<span class="font-code-sm text-code-sm text-outline truncate">+55 11 ••••-7712</span>
+</div>
+<div class="col-span-3 flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-title-md text-[11px] shrink-0">
+              AL
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface truncate">Ana Luiza</span>
+<span class="font-label-sm text-label-sm text-outline truncate">Apto 102 • Bloco A</span>
+</div>
+</div>
+<div class="col-span-2 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface-variant">Expirado há 2h</span>
+<span class="font-label-sm text-label-sm text-outline">Janela 20:00 - 00:00</span>
+</div>
+<div class="col-span-1 flex items-center justify-end gap-1">
+<button class="w-7 h-7 rounded-md hover:bg-white/[0.08] text-outline hover:text-on-surface flex items-center justify-center transition-colors cursor-pointer" title="Inspecionar" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Tips / Operational Policy Banner -->
+<div class="p-4 rounded-xl bg-surface-container/30 flex items-start gap-3">
+<span class="material-symbols-outlined text-[20px] text-tertiary shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Diretriz Solidária de Acesso ao Minimercado</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            Ao emitir um passe temporário via SmartCondo App, o condômino titular assina digitalmente termo solidário (Art. 1.336 CC). Quaisquer consumos, extravios ou avarias geradas pelo QR Code emitido são lançados automaticamente na taxa condominial da respectiva unidade autônoma.
+          </p>
+</div>
+</div>
+</div>
+<!-- Right: Inspector Column (4 Cols - Apple VisionOS / macOS Inspector Card) -->
+<div class="lg:col-span-4 flex flex-col gap-3">
+<div class="p-5 rounded-2xl bg-surface-container/70 backdrop-blur-2xl shadow-xl flex flex-col gap-4 relative overflow-hidden">
+<!-- Inspector Top Ambient Light -->
+<div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary/20 via-primary to-secondary/30"></div>
+<!-- Inspector Header -->
+<div class="flex items-center justify-between pb-3 border-b border-white/[0.06]">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">PASSE VÁLIDO • EM ESPERA</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">VISIT-AFD186E6</span>
+</div>
+<!-- Dynamic QR Code Card -->
+<div class="p-4 rounded-xl bg-surface-container-lowest/90 flex flex-col items-center justify-center gap-3 relative shadow-inner">
+<div class="w-36 h-36 p-2 rounded-lg bg-white flex items-center justify-center shadow-md">
+<!-- Simulated High-Precision QR Code SVG -->
+<svg class="w-full h-full text-surface-container-lowest" fill="currentColor" viewbox="0 0 100 100">
+<!-- Corner Finder Patterns -->
+<rect fill="#0f131c" height="30" rx="3" width="30" x="0" y="0"></rect>
+<rect fill="white" height="20" width="20" x="5" y="5"></rect>
+<rect fill="#0f131c" height="10" width="10" x="10" y="10"></rect>
+<rect fill="#0f131c" height="30" rx="3" width="30" x="70" y="0"></rect>
+<rect fill="white" height="20" width="20" x="75" y="5"></rect>
+<rect fill="#0f131c" height="10" width="10" x="80" y="10"></rect>
+<rect fill="#0f131c" height="30" rx="3" width="30" x="0" y="70"></rect>
+<rect fill="white" height="20" width="20" x="5" y="75"></rect>
+<rect fill="#0f131c" height="10" width="10" x="10" y="80"></rect>
+<!-- Data Matrix Elements -->
+<rect fill="#0f131c" height="8" rx="1" width="8" x="35" y="5"></rect>
+<rect fill="#0f131c" height="6" rx="1" width="6" x="48" y="12"></rect>
+<rect fill="#0f131c" height="7" rx="1" width="7" x="58" y="5"></rect>
+<rect fill="#0f131c" height="6" rx="1" width="8" x="35" y="25"></rect>
+<rect fill="#0A84FF" height="14" rx="2" width="14" x="48" y="35"></rect>
+<rect fill="#0f131c" height="8" rx="1" width="8" x="15" y="45"></rect>
+<rect fill="#0f131c" height="8" rx="1" width="8" x="72" y="38"></rect>
+<rect fill="#0f131c" height="8" rx="1" width="10" x="85" y="45"></rect>
+<rect fill="#0f131c" height="8" rx="1" width="8" x="35" y="70"></rect>
+<rect fill="#0f131c" height="12" rx="1" width="6" x="48" y="78"></rect>
+<rect fill="#0f131c" height="6" rx="1" width="12" x="65" y="72"></rect>
+<rect fill="#0f131c" height="10" rx="1" width="10" x="82" y="80"></rect>
+</svg>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-code-sm text-code-sm text-primary font-bold tracking-widest uppercase">VISIT-AFD186E6</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">Assinatura Digital SHA-256 / ESP32 Sync</span>
+</div>
+</div>
+<!-- Visitor & Host Details Form -->
+<div class="space-y-3">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Visitante Autorizado</span>
+<div class="mt-1 flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Nicollas Akylis</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary/15 text-secondary">Acesso Único</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">+55 11 9••••-8910</span>
+</div>
+<div class="pt-2 border-t border-white/[0.06]">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Titular Anfitrião (Solidário)</span>
+<div class="mt-1 flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-title-md text-xs font-bold">
+                JM
+              </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Jose Matheus</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Apartamento 101 • Bloco A</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Solidarity Responsibility Badge / Alert -->
+<div class="p-3 rounded-lg bg-tertiary/10 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-title-md text-[12px] text-tertiary leading-tight font-semibold">Termo Solidário Vinculado</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+              Jose Matheus assumiu inteira responsabilidade por eventuais compras e condutas no minimercado.
+            </p>
+</div>
+</div>
+<!-- Activity Timeline / Audit Trail -->
+<div class="space-y-2 pt-1 border-t border-white/[0.06]">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Auditoria de Eventos</span>
+<div class="space-y-2.5 mt-2 font-label-sm text-label-sm">
+<div class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0 mt-1.5"></span>
+<div class="flex-1 flex justify-between">
+<span class="text-on-surface">Link gerado no SmartCondo App</span>
+<span class="font-code-sm text-outline">00:56:04</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5"></span>
+<div class="flex-1 flex justify-between">
+<span class="text-on-surface">Link aberto no navegador mobile</span>
+<span class="font-code-sm text-outline">00:58:12</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-outline shrink-0 mt-1.5"></span>
+<div class="flex-1 flex justify-between">
+<span class="text-outline">Aguardando leitura na catraca ESP32</span>
+<span class="font-code-sm text-secondary">Em espera</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="grid grid-cols-2 gap-2">
+<button class="h-9 px-3 rounded-lg bg-white/[0.08] hover:bg-white/[0.14] text-on-surface font-title-md text-title-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>Copiar Link</span>
+</button>
+<button class="h-9 px-3 rounded-lg bg-white/[0.08] hover:bg-white/[0.14] text-on-surface font-title-md text-title-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Reenviar SMS</span>
+</button>
+</div>
+<button class="w-full h-9 px-3 rounded-lg bg-error-container/30 hover:bg-error-container/50 text-error font-title-md text-title-md flex items-center justify-center gap-1.5 transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span>Revogar Passe Imediatamente</span>
+</button>
+</div>
+<!-- Footer Notice LGPD -->
+<div class="pt-2 text-center">
+<span class="font-label-sm text-[10px] text-outline tracking-tight">
+            Em conformidade com a LGPD • Registro imutável de telemetria IoT.
+          </span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

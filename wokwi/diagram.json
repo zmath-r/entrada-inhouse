@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "author": "SmartCondo",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd",
+      "top": -90,
+      "left": 150,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_green",
+      "top": -60,
+      "left": -100,
+      "attrs": { "color": "green", "label": "Lock/Relay" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": -20,
+      "left": -100,
+      "attrs": { "color": "red", "label": "Denied" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer",
+      "top": 30,
+      "left": -100,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_emerg",
+      "top": 90,
+      "left": -100,
+      "attrs": { "color": "red", "label": "Emergency" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_exit",
+      "top": 150,
+      "left": -100,
+      "attrs": { "color": "green", "label": "No-Touch Exit" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:21", "lcd:SDA", "green", [ "v0" ] ],
+    [ "esp:22", "lcd:SCL", "blue", [ "v0" ] ],
+    [ "esp:GND.1", "lcd:GND", "black", [ "v0" ] ],
+    [ "esp:5V", "lcd:VCC", "red", [ "v0" ] ],
+    [ "esp:2", "led_green:A", "green", [ "v0" ] ],
+    [ "esp:GND.1", "led_green:C", "black", [ "v0" ] ],
+    [ "esp:4", "led_red:A", "red", [ "v0" ] ],
+    [ "esp:GND.1", "led_red:C", "black", [ "v0" ] ],
+    [ "esp:15", "buzzer:1", "purple", [ "v0" ] ],
+    [ "esp:GND.1", "buzzer:2", "black", [ "v0" ] ],
+    [ "esp:5", "btn_emerg:1.l", "orange", [ "v0" ] ],
+    [ "esp:GND.1", "btn_emerg:2.l", "black", [ "v0" ] ],
+    [ "esp:18", "btn_exit:1.l", "green", [ "v0" ] ],
+    [ "esp:GND.1", "btn_exit:2.l", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

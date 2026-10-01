@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error":"#690005","secondary-container":"#09bf49","secondary":"#47e266","on-primary-fixed-variant":"#00468d","on-tertiary":"#482900","secondary-fixed":"#6cff82","inverse-surface":"#dfe2ee","surface-bright":"#353942","on-error-container":"#ffdad6","surface-container-high":"#262a33","primary-fixed-dim":"#aac7ff","tertiary":"#ffb868","inverse-primary":"#005db8","on-primary-container":"#002957","tertiary-fixed-dim":"#ffb868","primary-fixed":"#d6e3ff","error":"#ffb4ab","inverse-on-surface":"#2c3039","on-secondary":"#003910","on-surface":"#dfe2ee","tertiary-container":"#ce7f00","on-tertiary-container":"#3f2300","surface-dim":"#0f131c","on-background":"#dfe2ee","surface-container-highest":"#31353e","surface-container-lowest":"#0a0e16","on-primary-fixed":"#001b3e","surface-tint":"#aac7ff","surface-container-low":"#181c24","tertiary-fixed":"#ffddbb","on-secondary-fixed-variant":"#00531a","primary-container":"#3e90ff","surface-container":"#1c2028","outline":"#8b91a0","outline-variant":"#414754","surface-variant":"#31353e","on-surface-variant":"#c0c6d6","on-tertiary-fixed-variant":"#673d00","on-secondary-container":"#004615","error-container":"#93000a","on-primary":"#003064","primary":"#aac7ff","on-tertiary-fixed":"#2b1700","background":"#0f131c","secondary-fixed-dim":"#47e266","surface":"#0f131c","on-secondary-fixed":"#002106"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xl":"2rem","space-sm":"0.5rem","margin":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter":"1.25rem","gutter-mobile":"0.75rem"},"fontFamily":{"headline-md":["Inter"],"display-lg-mobile":["Inter"],"label-md":["Inter"],"display-lg":["Inter"],"code-sm":["JetBrains Mono"],"body-md":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"title-lg":["Inter"],"title-md":["Inter"],"body-lg":["Inter"]},"fontSize":{"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.0em","fontWeight":"500"}],"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"-0.003em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"600"}],"title-lg":["17px",{"lineHeight":"22px","letterSpacing":"-0.012em","fontWeight":"600"}],"title-md":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased select-none"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low/75 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="pt-4 px-5 pb-3 flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-[#FF5F56] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div><div class="w-3 h-3 rounded-full bg-[#FFBD2E] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div><div class="w-3 h-3 rounded-full bg-[#27C93F] shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]"></div></div><div class="px-5 pt-3 pb-5"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">domain</span></div><div><h1 class="font-title-md text-title-md text-on-surface tracking-tight leading-none">SmartCondo</h1><p class="font-label-sm text-label-sm text-on-surface-variant leading-tight mt-0.5">Painel Administrativo</p></div></div></div><div class="px-5 pb-2"><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Administração</span></div><nav class="flex flex-col gap-1 px-3" data-active-classes="bg-surface-container-high text-on-surface font-title-md shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-lg transition-all bg-surface-container-high text-on-surface font-title-md shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]" data-path="monitoramento" href="#"><span class="material-symbols-outlined text-[18px]">vital_signs</span><span>Monitoramento</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="moradores-e-unidades" href="#"><span class="material-symbols-outlined text-[18px]">group</span><span>Moradores &amp; Unidades</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="convites-e-passes" href="#"><span class="material-symbols-outlined text-[18px]">qr_code_2</span><span>Convites &amp; Passes</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dispositivos-iot" href="#"><span class="material-symbols-outlined text-[18px]">memory</span><span>Dispositivos IoT</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="configuracoes" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Configurações</span></a></nav></div><div class="p-3"><div class="p-2.5 rounded-xl bg-surface-container/60 backdrop-blur-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight">Síndico Geral</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Bloco A</span></div></div><a class="w-7 h-7 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error transition-colors" data-path="logout" href="#" title="Encerrar Sessão"><span class="material-symbols-outlined text-[18px]">power_settings_new</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/75 backdrop-blur-2xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-3"><div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-secondary/10"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-code-sm text-code-sm text-secondary uppercase tracking-wide">Hardware ONLINE</span></div></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-high/60 backdrop-blur-md text-on-surface-variant w-64"><span class="material-symbols-outlined text-[16px] text-outline">search</span><span class="font-body-md text-body-md text-outline flex-1">Buscar unidade, tag ou log...</span><kbd class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]">⌘K</kbd></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative w-full pt-14 px-space-lg pb-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-6 w-full max-w-7xl mx-auto pb-10">
+<!-- Top Action & Context Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-code-sm text-code-sm text-primary tracking-wider uppercase font-semibold">Telemetria ao Vivo</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ciclo de leitura: 500ms</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Monitoramento em Tempo Real</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Controle unificado de acessos, validação de tokens temporários e segurança da catraca autônoma.</p>
+</div>
+<div class="flex flex-wrap items-center gap-2.5">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-high/70 hover:bg-surface-container-highest/80 text-on-surface font-title-md text-title-md transition-all duration-150 active:scale-95 shadow-sm" id="btn-export-csv">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Exportar Relatório CSV</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-error-container/25 hover:bg-error-container/40 text-error font-title-md text-title-md transition-all duration-150 active:scale-95 shadow-sm" id="btn-emergency-override">
+<span class="material-symbols-outlined text-[18px]">emergency_home</span>
+<span>Abertura Remota</span>
+</button>
+</div>
+</div>
+<!-- Live Telemetry KPI Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- Card 1: Total Entries Today -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Acessos Hoje</span>
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">sensor_door</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">142</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center font-medium">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12%
+            </span>
+</div>
+<span class="font-code-sm text-code-sm text-outline">vs ontem: 127</span>
+</div>
+<div class="mt-3 w-full bg-surface-container-highest rounded-full h-1 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 74%"></div>
+</div>
+</div>
+<!-- Card 2: Minimercado Occupants -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ocupação Atual</span>
+<div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-secondary font-bold tracking-tight">3</span>
+<span class="font-body-md text-body-md text-on-surface-variant">pessoas no minimercado</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary uppercase bg-secondary/10 px-1.5 py-0.5 rounded">Cap: 6 Max</span>
+</div>
+<div class="mt-3 flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="w-2 h-2 rounded-full bg-surface-container-highest"></span>
+<span class="w-2 h-2 rounded-full bg-surface-container-highest"></span>
+<span class="w-2 h-2 rounded-full bg-surface-container-highest"></span>
+<span class="ml-auto font-label-sm text-label-sm text-on-surface-variant">50% seguro</span>
+</div>
+</div>
+<!-- Card 3: Active Passes -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Passes Solidários</span>
+<div class="w-8 h-8 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">qr_code</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-tertiary font-bold tracking-tight">8</span>
+<span class="font-body-md text-body-md text-on-surface-variant">convites válidos</span>
+</div>
+<span class="font-code-sm text-code-sm text-tertiary">Anti-Passback ON</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Emitidos por moradores</span>
+<span class="font-code-sm text-code-sm text-primary">Ver ativos →</span>
+</div>
+</div>
+<!-- Card 4: Denied / Security Alerts -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Recusas / Bloqueios</span>
+<div class="w-8 h-8 rounded-lg bg-error/15 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">gpp_bad</span>
+</div>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-error font-bold tracking-tight">2</span>
+<span class="font-label-sm text-label-sm text-error bg-error/10 px-1.5 py-0.5 rounded">TOTP &amp; Reuso</span>
+</div>
+<span class="font-code-sm text-code-sm text-error">Risco: Baixo</span>
+</div>
+<div class="mt-3 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Último: há 24 min (Apto 101)</span>
+<span class="font-code-sm text-code-sm text-error cursor-pointer hover:underline">Auditar</span>
+</div>
+</div>
+</div>
+<!-- Hardware Banner (Catraca & Leitor IoT) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high/50 backdrop-blur-xl p-4 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="relative w-10 h-10 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">developer_board</span>
+<span class="absolute -top-1 -right-1 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Torniquete &amp; Catraca Biométrica (Entrada Minimercado Bloco A)</h2>
+<span class="font-code-sm text-code-sm text-secondary bg-secondary/15 px-2 py-0.5 rounded-full font-semibold uppercase tracking-wider">ONLINE &amp; SINCRONIZADO</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-0.5 font-label-md text-label-md text-on-surface-variant">
+<span>Hardware: <code class="font-code-sm text-code-sm text-on-surface">ESP32-S3 Pro</code></span>
+<span>Firmware: <code class="font-code-sm text-code-sm text-on-surface">v2.4.1-rc3</code></span>
+<span>Latência: <code class="font-code-sm text-code-sm text-secondary">18ms</code></span>
+<span>Criptografia: <code class="font-code-sm text-code-sm text-on-surface">AES-256 GCM</code></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-auto">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest/80 hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" id="btn-reboot-node">
+<span class="material-symbols-outlined text-[16px] text-outline">refresh</span>
+<span>Ping Dispositivo</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm active:scale-95" id="btn-gate-toggle">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+<span>Liberar Passagem</span>
+</button>
+</div>
+</div>
+<!-- Main Audit Log Feed / Table Module -->
+<div class="flex flex-col rounded-xl bg-surface-container/70 backdrop-blur-2xl shadow-[0_8px_30px_rgba(0,0,0,0.25)] overflow-hidden">
+<!-- Controls Toolbar (Search & Apple-style Segmented Filter) -->
+<div class="p-4 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 bg-surface-container-high/40">
+<!-- Segmented Control -->
+<div class="inline-flex p-1 rounded-xl bg-surface-container-lowest/80 text-on-surface-variant font-label-md text-label-md shadow-inner">
+<button class="filter-tab px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-title-md text-title-md transition-all shadow-sm" data-filter="all">Todos os Eventos</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-filter="moradores">Apenas Moradores</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-filter="visitantes">Visitantes Solidários</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-filter="negados">Tentativas Negadas</button>
+</div>
+<!-- Quick Search Bar & Auto-refresh status -->
+<div class="flex items-center gap-3">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[16px] text-outline pointer-events-none">search</span>
+<input class="pl-9 pr-3 py-1.5 w-64 rounded-xl bg-surface-container-lowest/80 text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all" id="stream-search" placeholder="Filtrar por nome, apto ou código..." type="text"/>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-surface-container-high/70 text-on-surface-variant font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>Live Stream</span>
+</div>
+</div>
+</div>
+<!-- Table Content -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md text-on-surface border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest/40 font-label-sm text-label-sm text-outline uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Data / Hora</th>
+<th class="py-3 px-4 font-semibold">Usuário &amp; Unidade</th>
+<th class="py-3 px-4 font-semibold">Vínculo de Acesso</th>
+<th class="py-3 px-4 font-semibold">Método &amp; Hash</th>
+<th class="py-3 px-4 font-semibold">Detalhes &amp; Auditoria</th>
+<th class="py-3 px-4 font-semibold">Ação / Status</th>
+<th class="py-3 px-4 font-semibold text-right">Instantâneo</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent" id="access-log-stream">
+<!-- Row 1 (From Original Mock: 18/09/2026, 00:43:08 - Jose Matheus - Token Expirado) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors group" data-type="negados">
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">18/09/2026</span>
+<span class="text-tertiary">00:43:08</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center font-code-sm text-code-sm text-on-surface font-bold">
+                    JM
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Jose Matheus</span>
+<span class="font-label-sm text-label-sm text-outline">Apartamento 101</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Morador Titular</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-outline">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">key</span>
+<span>TOTP #AFD186</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-body-md text-error">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Token expirado (TOTP janela &gt; 30s)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error/15 text-error font-code-sm text-code-sm font-bold uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  DENIED
+                </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap text-right">
+<button class="view-snapshot-btn p-1.5 rounded-lg bg-surface-container-high/60 hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" title="Ver foto no momento">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 (From Original Mock: 18/09/2026, 00:42:46 - Morador Jose Matheus - ENTRY) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors group" data-type="moradores">
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">18/09/2026</span>
+<span class="text-secondary">00:42:46</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-primary/20 flex items-center justify-center font-code-sm text-code-sm text-primary font-bold">
+                    JM
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Jose Matheus</span>
+<span class="font-label-sm text-label-sm text-outline">Apartamento 101</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Morador Titular</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">face</span>
+<span>FaceID Matched (99.4%)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-body-md text-on-surface">
+<span class="text-on-surface-variant">Morador: Jose Matheus - Apto 101 (Liberação imediata)</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-code-sm text-code-sm font-bold uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+                  ENTRY
+                </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap text-right">
+<button class="view-snapshot-btn p-1.5 rounded-lg bg-surface-container-high/60 hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" title="Ver foto no momento">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 (From Original Mock: 18/09/2026, 00:42:46 - Drauzio Varella / Resp Solidária Jose Matheus) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors group" data-type="visitantes">
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">18/09/2026</span>
+<span class="text-secondary">00:42:46</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-tertiary/20 flex items-center justify-center font-code-sm text-code-sm text-tertiary font-bold">
+                    DV
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-tertiary leading-tight font-semibold">Drauzio Varella</span>
+<span class="font-label-sm text-label-sm text-outline">Visitante Convidado</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Passe Solidário</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">qr_code_2</span>
+<span>QR #14788259</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-body-md text-on-surface">
+<div class="flex flex-col">
+<span class="font-semibold text-primary">VISITANTE: Drauzio Varella</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Resp. Solidária: Jose Matheus - Apto 101</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-code-sm text-code-sm font-bold uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  ENTRY
+                </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap text-right">
+<button class="view-snapshot-btn p-1.5 rounded-lg bg-surface-container-high/60 hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" title="Ver foto no momento">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Mariana Costa (Moradora) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors group" data-type="moradores">
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">18/09/2026</span>
+<span class="text-outline">00:38:15</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-primary/20 flex items-center justify-center font-code-sm text-code-sm text-primary font-bold">
+                    MC
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Mariana Costa</span>
+<span class="font-label-sm text-label-sm text-outline">Apartamento 304</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Morador Titular</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">nfc</span>
+<span>Tag RFID #9C4B21</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-body-md text-on-surface">
+<span class="text-on-surface-variant">Saída registrada (Torniquete Direcional B)</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-code-sm text-code-sm font-bold uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  EXIT
+                </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap text-right">
+<button class="view-snapshot-btn p-1.5 rounded-lg bg-surface-container-high/60 hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" title="Ver foto no momento">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Lucas Albuquerque (Visitante - Apto 502) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors group" data-type="visitantes">
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">18/09/2026</span>
+<span class="text-secondary">00:35:50</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-tertiary/20 flex items-center justify-center font-code-sm text-code-sm text-tertiary font-bold">
+                    LA
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-tertiary leading-tight font-semibold">Lucas Albuquerque</span>
+<span class="font-label-sm text-label-sm text-outline">Visitante Convidado</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Passe Solidário</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">qr_code_2</span>
+<span>QR #88931201</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-body-md text-on-surface">
+<div class="flex flex-col">
+<span class="font-semibold text-primary">VISITANTE: Lucas Albuquerque</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Resp. Solidária: Camila Duarte - Apto 502</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-code-sm text-code-sm font-bold uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  ENTRY
+                </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap text-right">
+<button class="view-snapshot-btn p-1.5 rounded-lg bg-surface-container-high/60 hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" title="Ver foto no momento">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: Anti-Passback Denied -->
+<tr class="hover:bg-surface-container-high/40 transition-colors group" data-type="negados">
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">18/09/2026</span>
+<span class="text-error">00:21:04</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-error/20 flex items-center justify-center font-code-sm text-code-sm text-error font-bold">
+                    ??
+                  </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-tight">Passe Compartilhado</span>
+<span class="font-label-sm text-label-sm text-outline">Apto 203 (Origem)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-error/10 text-error font-label-sm text-label-sm font-semibold uppercase tracking-wider">Violação de Regra</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap font-code-sm text-code-sm text-error">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+<span>QR #99102431 (Reuso)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-md text-body-md text-error">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">block</span>
+<span>Anti-Passback disparado (passe já utilizado há 4 min)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error/15 text-error font-code-sm text-code-sm font-bold uppercase tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                  DENIED
+                </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap text-right">
+<button class="view-snapshot-btn p-1.5 rounded-lg bg-surface-container-high/60 hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-colors" title="Ver foto no momento">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer with Compliance & Pagination Info -->
+<div class="p-4 bg-surface-container-lowest/60 flex flex-col sm:flex-row items-center justify-between gap-3 font-label-md text-label-md text-outline">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Logs auditáveis com assinatura criptográfica SHA-256 e conformidade com a LGPD (Art. 7º IX).</span>
+</div>
+<div class="flex items-center gap-3">
+<span>Exibindo 6 de 142 registros</span>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-container-highest">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Security Camera Snapshot Modal (macOS Frosted Center Console) -->
+<div class="fixed inset-0 z-50 bg-surface-dim/80 backdrop-blur-md hidden items-center justify-center p-4" id="snapshot-modal">
+<div class="relative w-full max-w-xl rounded-2xl bg-surface-container-high/90 backdrop-blur-2xl p-6 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7)] flex flex-col gap-4 animate-in fade-in zoom-in duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Captura da Câmera de Acesso #01</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="relative w-full aspect-video rounded-xl bg-surface-container-lowest overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="High quality security CCTV snapshot of a modern smart condominium entrance turnstile with high-tech glass doors and facial recognition screen. Crisp low light surveillance photo with timestamp overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmcVdULhHe0Uw0CNQtg4ckUypYc_577lHBRy8VXPDyfu26kFxL4rswbPmh8lbDVTul5rTzJz_rb1BHKuDyq4o7Y2OV1GY3ksDXmpMJrbQfg_3O0NbV3ps5LxNOjm_6VvJMViJZCbPqgFZ11tOxLKYMGihraupYAINadoPkHppUBwrNuJ1s2vS5H4xPR9S49fQlZORGTy95mgOiQQuGLNbfR4U6HT7QLUbWnLrk0UVc-lUdVdfHjg3R"/>
+<div class="absolute top-3 left-3 bg-surface-dim/80 backdrop-blur-md px-2 py-1 rounded font-code-sm text-code-sm text-secondary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>LIVE SNAPSHOT • 18/09/2026 00:42:46</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-dim/80 backdrop-blur-md px-2.5 py-1 rounded font-code-sm text-code-sm text-on-surface">
+            Câmera Catraca MiniMercado - Bloco A
+          </div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Jose Matheus (Apto 101)</span>
+<span class="font-label-sm text-label-sm text-outline">Autenticado via Facial &amp; Abertura Automática</span>
+</div>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-title-md text-title-md hover:bg-primary-container transition-all" id="close-modal-confirm">
+            Fechar Visualização
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Segmented Control Filters
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const rows = document.querySelectorAll('#access-log-stream tr');
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => {
+        t.classList.remove('bg-surface-container-high', 'text-on-surface', 'font-title-md', 'shadow-sm');
+        t.classList.add('text-on-surface-variant');
+      });
+      tab.classList.remove('text-on-surface-variant');
+      tab.classList.add('bg-surface-container-high', 'text-on-surface', 'font-title-md', 'shadow-sm');
+
+      const filter = tab.dataset.filter;
+      rows.forEach(row => {
+        if (filter === 'all' || row.dataset.type === filter) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Client-side quick search
+  const searchInput = document.getElementById('stream-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(term) ? '' : 'none';
+      });
+    });
+  }
+
+  // Snapshot modal logic
+  const modal = document.getElementById('snapshot-modal');
+  const openButtons = document.querySelectorAll('.view-snapshot-btn');
+  const closeBtn = document.getElementById('close-modal-btn');
+  const closeConfirm = document.getElementById('close-modal-confirm');
+
+  function openModal() {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  openButtons.forEach(btn => btn.addEventListener('click', openModal));
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (closeConfirm) closeConfirm.addEventListener('click', closeModal);
+
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+  }
+
+  // Interactive Gate & Emergency Buttons
+  const gateBtn = document.getElementById('btn-gate-toggle');
+  if (gateBtn) {
+    gateBtn.addEventListener('click', () => {
+      const originalText = gateBtn.innerHTML;
+      gateBtn.innerHTML = `<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Liberando...</span>`;
+      setTimeout(() => {
+        gateBtn.innerHTML = `<span class="material-symbols-outlined text-[16px]">check_circle</span><span>Catraca Aberta</span>`;
+        gateBtn.classList.replace('bg-primary', 'bg-secondary');
+        setTimeout(() => {
+          gateBtn.innerHTML = originalText;
+          gateBtn.classList.replace('bg-secondary', 'bg-primary');
+        }, 3000);
+      }, 700);
+    });
+  }
+</script></main></div></body></html>
